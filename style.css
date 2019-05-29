@@ -406,10 +406,11 @@ header nav ul li a.active {
     height: 5vh;
     position: absolute;
     top: 10vh;
-    left: 55vh;
+    left: 44vh;
     background-color: transparent;
     border: 0px;
     font-size: 30px;
+    z-index: 10;
 }
 
 /************ OM OS *******************/
@@ -419,7 +420,7 @@ header nav ul li a.active {
 }
 
 .post-om-os {
-    padding: 1rem;
+    padding: 0rem;
 
 
 
@@ -441,6 +442,7 @@ header nav ul li a.active {
     text-align: center;
 }
 
+/*********USTILLINGER *************/
 
 
 /********** iPAD MEDIA QUERY **********/

@@ -75,7 +75,7 @@
 
             <div class="kunstnere-content">
                 <h1 class="title"></h1>
-                <p class="underrubrik"></p>
+                <p class="rubrik"></p>
                 <p class="brodtekst1"></p>
                 <p class="brodtekst2"></p>
             </div>
@@ -89,15 +89,18 @@
         <template>
 
             <section class="post-om-os">
-
-                <div>
-                    <img class="billede">
-                </div>
                 <div>
                     <h3 class="navn"></h3>
                     <p class="beskrivelse"></p>
 
                 </div>
+                <div>
+                    <img class="billede1">
+                    <img class="billede2">
+                    <img class="billede3">
+                    <img class="billede4">
+                </div>
+
 
             </section>
         </template>
@@ -136,8 +139,8 @@
         async function hentJson() {
             console.log("Henter json");
             // Fortæller os om async functionen bliver loaded
-            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/kunstnere";
-            const url2 = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/om_os/178";
+            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/udstillinger";
+            const url2 = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/om_udstillinger/197";
             //Er en konstabel der retter mod den "page" eller "post" på back-enden (wordpress) som vi gerne vil arbejde med
 
             // Henter data filen
@@ -166,10 +169,13 @@
                 //cloneNode skaber en kopi af "template".
                 let klon = temp.cloneNode(true).content;
                 console.log(post.billede);
-
-                klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector("h3").innerHTML = post.title.rendered;
-                klon.querySelector(".beskrivelse").innerHTML = post.beskrivelse;
+                klon.querySelector(".beskrivelse").innerHTML = post.brodtekst1;
+                klon.querySelector(".billede1").src = post.billede1.guid;
+                klon.querySelector(".billede2").src = post.billede2.guid;
+                klon.querySelector(".billede3").src = post.billede3.guid;
+                klon.querySelector(".billede4").src = post.billede4.guid;
+
 
                 //Sender klonen retur til vores destination "posts" og processen gentages.
                 dest.appendChild(klon);
@@ -178,7 +184,7 @@
 
             })
             document.querySelector("h1").textContent = indhold2.title.rendered;
-            document.querySelector(".underrubrik").textContent = indhold2.underrubrik;
+            document.querySelector(".rubrik").textContent = indhold2.rubrik;
             document.querySelector(".brodtekst1").textContent = indhold2.brodtekst1;
             document.querySelector(".brodtekst2").textContent = indhold2.brodtekst2;
 

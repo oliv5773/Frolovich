@@ -1,0 +1,860 @@
+/************ GENERELT ***********/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background-color: #F2EBDC;*/
+    background-attachment: fixed;
+
+    background-position: center;
+
+}
+
+a {
+    /* color: white; */
+}
+
+
+h1 {
+    font-size: 1.4em;
+    color: #262120;
+}
+
+
+
+
+
+/**********NAVIGATION ***********/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    z-index: 10;
+
+}
+
+header .logo {
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-weight: bold;
+
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo {
+    max-width: 500px;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: #262120;
+    font-size: 0.6em;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1em;
+}
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li.sub-menu:before {
+    content: '\f078';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #000000;
+    right: 3px;
+}
+
+header nav ul li.active.sub-menu:before {
+    content: '\f077';
+}
+
+header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none
+}
+
+header nav ul li.active ul {
+    /* use li: hover instead */
+    display: block;
+
+}
+
+header nav ul li ul li {
+    display: block;
+
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 5px;
+}
+
+header nav ul li a:hover {
+    color: #FFFFFF;
+    background: #262120;
+}
+
+header nav ul li a.active {
+    background: #262120;
+
+
+}
+
+.menu-toggle {
+    color: #FFFFFF;
+    float: right;
+    margin-top: 1.3vh;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    display: none
+}
+
+.menu-toggle div {
+    background-color: #262120;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+
+.solid {
+    background-color: rgba(217, 164, 65, 0.9);
+    ;
+}
+
+/*NAVIGATION SLUT*/
+
+
+
+
+
+
+
+
+
+/********** ANIMATIONER **********/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
+
+/********** FORSIDE SPLASH **********/
+
+
+#splashvideo img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/********** FORSIDE HVAD TILBYDER VI **********/
+#tilbudwrapper {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#tilbud h1 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 75%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+
+
+
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: .5s ease;
+    background-color: #262120;
+    border-radius: 20px;
+
+
+}
+
+#tilbud p {
+    margin: 1rem 1rem 1rem 1rem;
+
+
+
+
+}
+
+.popup1 {
+    margin: 2rem 4rem 0rem 4rem;
+    display: none;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+    background-color: white;
+
+
+
+
+}
+
+.popup2 {
+    margin: 2rem 4rem 0rem 4rem;
+    display: none;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+    background-color: white;
+
+
+}
+
+.popup3 {
+    margin: 2rem 4rem 0rem 4rem;
+    display: none;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+    background-color: white;
+
+
+
+}
+
+.display {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/**********SMYKKER GALLERI **********/
+
+.post img {
+    width: 100%;
+}
+
+.posts {
+
+    margin: 3rem;
+    margin-top: 5rem;
+}
+
+.post {
+
+    padding: 1rem;
+    border: 0.5px solid lightgrey;
+    margin: 0.5rem;
+    background-color: #FFFFFF;
+}
+
+.post h2 {
+    text-align: center;
+}
+
+
+/************ SINGLE VIEW*************/
+#popup {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.71);
+
+
+
+}
+
+
+.singleret img {
+    max-width: 100%;
+}
+
+.singleret {
+    padding: 1rem;
+
+
+}
+
+.skjul {
+    display: none;
+}
+
+#indhold {
+    min-height: 61vh;
+    background-color: white;
+    width: 77vw;
+    margin: 4rem auto;
+    border: 1px solid black;
+}
+
+.singleret img {
+    max-width: 50%;
+}
+
+.singleret {
+    padding: 1rem;
+
+
+}
+
+#luk button {
+    width: 10vw
+}
+
+/************ OM OS *******************/
+.posts-om-os {
+    margin: 3rem;
+    margin-top: 4rem;
+}
+
+.post-om-os {
+    padding: 1rem;
+
+    margin: 2rem;
+
+}
+
+.post-om-os img {
+    width: 100%;
+}
+
+
+.kunstnere-content {
+    margin: 3rem;
+    margin-top: 5rem;
+    background-color: #FFFFFF;
+
+}
+
+.kunstnere-content h1 {
+    text-align: center;
+}
+
+
+
+/********** iPAD MEDIA QUERY **********/
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* TILBUD FORSIDE */
+    #tilbudwrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+        justify-items: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .popup1 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+
+    }
+
+    .popup2 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+
+    }
+
+    .popup3 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 3;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+    }
+
+    #tilbud p {
+        margin: 1rem 1rem 1rem 1rem
+    }
+
+    .display {
+        opacity: 1;
+    }
+
+    .container1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .container2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .container3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    /*Smykker Galleri*/
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5rem;
+    }
+
+    .post {
+
+        padding: 1rem;
+        border: 0.5px solid lightgrey;
+        margin: 0.5rem;
+        background-color: #FFFFFF;
+    }
+
+    .post h2 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/********** DESKTOP MEDIA QUERY **********/
+@media (min-width: 1024px) {
+    header nav ul li.active ul {
+        /* use li: hover instead */
+        display: block;
+
+
+    }
+
+    header nav ul li ul li {
+        display: block;
+
+    }
+
+    header nav ul li a {
+        color: #000000;
+    }
+
+
+
+    /*FORSIDE SPLASH*/
+    #forsidesplash {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    #splashvideo img {}
+
+    /*FORSIDE HVAD TILBYDER VI*/
+    #tilbudwrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+        justify-items: center;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .overlay {
+        border-radius: 20px;
+
+    }
+
+    .image {
+        border-radius: 20px;
+    }
+
+    .popup1 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+
+    }
+
+    .popup2 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+    }
+
+    .popup3 {
+        margin-bottom: 0;
+        display: block;
+        opacity: 0;
+        grid-row: 2;
+        grid-column: 3;
+        background-color: white;
+        margin: 1rem;
+        line-height: 1.5rem;
+        border-radius: 20px;
+
+
+    }
+
+    #tilbud p {
+        margin: 1rem 1rem 1rem 1rem
+    }
+
+    .display {
+        opacity: 1;
+    }
+
+    .container1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .container2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .container3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #tilbud h1 {
+        text-align: center;
+    }
+
+    .container {
+        position: relative;
+        width: 75%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+
+
+
+    }
+
+    /*SMYKKER GALLERI*/
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5rem;
+    }
+
+    .post {
+
+        padding: 1rem;
+        border: 0.5px solid lightgrey;
+        margin: 0.5rem;
+        background-color: #FFFFFF;
+    }
+
+    .post h2 {
+        text-align: center;
+    }
+
+    /***********OM OS*************/
+    .posts-om-os {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr margin: 5rem;
+        margin-top: 0;
+    }
+
+    .post-om-os {
+
+        padding: 1rem;
+        border: 0.5px solid lightgrey;
+        margin: 1rem;
+
+
+    }
+
+    .post-om-os img {
+        width: 100%;
+    }
+
+
+    .kunstnere-content {
+        margin: 5rem;
+
+        background-color: #FFFFFF;
+
+        margin-bottom: 0rem;
+
+
+    }
+
+    .kunstnere-content h1 {
+        text-align: center;
+    }
+
+    .underline {
+        height: 2px;
+        width: 500px;
+        background-color: black;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 860px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        transition: 0.5s;
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+    }
+
+    header nav ul li.active ul {
+        position: relative;
+        background: #003e6f;
+
+    }
+
+    header nav ul li.sub-menu:before {
+        content: '\f078';
+        font-family: fontAwesome;
+        position: absolute;
+        line-height: 50px;
+        color: #FFFFFF;
+        right: 10px;
+    }
+
+    header nav ul li ul li {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/********** FOOTER **********/
+
+
+footer {
+    background-color: #D9A441;
+    color: #262120;
+    height: 4em;
+    margin-top: 1em;
+}
+
+footer p {
+    font-size: 0.5em;
+}
+
+.footer_left {
+    text-align: left;
+    float: left;
+    padding-left: 1em;
+}
+
+.footer_right {
+    float: right;
+    text-align: right;
+    padding-right: 1em;
+}
+
+.footer_centered {
+    display: inline-block;
+    padding-top: 0.015em;
+    text-align: left;
+}
+
+
+.centerparent {
+    text-align: center;
+}
+
+.kontaktlink {
+    text-decoration: none;
+    color: #262120;
+}
+
+.kontaktlink:hover {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.some_facebook {
+    width: 1.7em;
+    padding-top: 1.2em;
+}
+
+.some_instagram {
+    width: 1.7em;
+}

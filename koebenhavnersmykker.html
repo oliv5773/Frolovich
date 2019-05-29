@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velkommen til Frolov & Savova Smykkekunst!</title>
+
+    <title>Smykker - Frolov & Savova Smykkekunst</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<style>
+    .navbar {
+        background-color: rgba(48, 65, 93, 0.9);
+    }
+
+    </style>
+<body>
+
+
+
+
+    <header class="navbar">
+        <div class="logo"> <a href="index.html">FROLOV & SAVOVA</a></div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">FORSIDE</a></li>
+
+                <li class="sub-menu"><a href="smykker.html">SMYKKER</a>
+                    <ul>
+                        <li><a href="bestillingsarbejde.html">BESTILLINGSARBEJDE</a></li>
+                        <li><a href="ringe.html">RINGE</a></li>
+                        <li><a href="vedhaeng.html">VEDHÆNG</a></li>
+                        <li><a href="oereringe.html">ØRERINGE</a></li>
+                        <li><a href="koebenhavnersmykker.html">KØBENHAVNERSMYKKER</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="om-os.html">OM OS</a>
+                    <ul>
+                        <li>
+                            <a href="udstillinger.html">UDSTILLINGER</a>
+                        </li>
+                        <li>
+
+
+
+                            <a href="inspiration.html">INSPIRATION</a>
+
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+     <div id="popup" class="skjul">
+        <div id="luk">
+            <button>X</button>
+        </div>
+        <div id="indhold"></div>
+    </div>
+   <main class="posts"></main>
+
+
+
+            <template>
+
+        <section class="post">
+           <h2></h2>
+            <div>
+                <img class="billede">
+            </div>
+            <div>
+                <p class="kort"></p>
+                <p class="pris"></p>
+            </div>
+
+        </section>
+    </template>
+
+
+
+
+
+    <footer>
+        <div class="footer_left">
+            <p><strong>Frolov & Savova Smykkekunst</strong><br>Nørre Farimagsgade 70<br>1364 København K<br><a class="kontaktlink" href="tel:+4528111741">+45 28111741</a>
+                <br><a class="kontaktlink" href="mailto: ptossip@gmail.com">ptossip@gmail.com</a></p>
+        </div>
+        <div class="footer_right">
+            <p>SoMe-icons</p>
+        </div>
+        <div class="centerparent">
+            <div class="footer_centered">
+                <p class="footer_centered">
+                    <strong>Åbningstider</strong>
+                    <br>Tirsdag-Fredag: 10:00-17:30
+                    <br>Lørdag: 13:00-16:00
+                    <br>Søndag-Mandag: Efter aftale</p>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+        let indhold;
+        document.addEventListener("DOMContentLoaded", hentJson);
+        //Henter JSON fil i asynkron function.
+
+        async function hentJson() {
+            console.log("Henter json");
+            // Fortæller os om async functionen bliver loaded
+            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/kbenhavnersmykker";
+            //Er en konstabel der retter mod den "page" eller "post" på back-enden (wordpress) som vi gerne vil arbejde med
+
+            // Henter data filen
+            const myJson = await fetch(url);
+            // den hentede data skal tolkes som json
+            indhold = await myJson.json();
+            //Kalder funktion der viser data i DOM
+
+            visIndhold();
+
+            //Leder async functionen videre til "visIndhold" functionen, hvor indholdet bliver hentet ind.
+        }
+
+        function visIndhold() {
+
+            //Destinationen for hvor vi vil have indholdet hen
+            let dest = document.querySelector(".posts");
+            //Template i destinationen, som danner opbygningen af det aktuelle post, i html.
+            let temp = document.querySelector("template");
+
+
+            //En "For each" funktion, som gør at hvert nyt post bliver sat i hver sin template, altså bliver indholdet loopet. og overskriver dermed ikke hinanden
+            indhold.forEach(post => {
+                //cloneNode skaber en kopi af "template".
+                let klon = temp.cloneNode(true).content;
+                console.log(post.billede);
+                klon.querySelector("h2").innerHTML = post.title.rendered;
+                klon.querySelector("img").src = post.billede.guid;
+                klon.querySelector(".pris").innerHTML = post.pris;
+                klon.querySelector(".kort").innerHTML = post.beskrivelse;
+                //Sender klonen retur til vores destination "posts" og processen gentages.
+                dest.appendChild(klon);
+
+                dest.lastElementChild.addEventListener("click", () => {
+                        visSingle(post);
+                    });
+
+                function visSingle(post) {
+                        document.querySelector("#indhold").innerHTML = `
+                            <article class="singleret">
+                                <h2>${post.title.rendered}</h2>
+                                <img src="${post.billede.guid}">
+                                <p>Beskrivelse: ${post.beskrivelse}</p>
+
+
+
+                                </article>
+                        `;
+                        document.querySelector("#popup").style.display = "block";
+                        document.querySelector("#popup #luk").addEventListener("click", close);
+                        document.querySelector("body").style.overflow = "hidden";
+                    }
+
+                    function close() {
+                        document.querySelector("#popup").style.display = "none";
+                        document.querySelector("body").style.overflow = "scroll";
+                    }
+
+            })
+
+
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -20,7 +20,10 @@ h1 {
     color: #262120;
 }
 
+.bold {
+    font-family: 'Cormorant', bold;
 
+}
 
 
 
@@ -246,7 +249,7 @@ header nav ul li a.active {
 }
 
 .text {
-    color: #FFFFFF;
+    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -269,10 +272,12 @@ header nav ul li a.active {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.4;
     transition: .5s ease;
     background-color: #262120;
+
     border-radius: 20px;
+
 
 
 }

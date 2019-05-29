@@ -18,26 +18,7 @@
         background-color: rgba(217, 164, 65, 0.9);
     }
 
-#slideshow {
-    display: inline-block;
-    margin-bottom: 10vh;;
-    position: relative;
-    width: 100%;
-    height: 9em;
-    padding: 0;
-}
 
-#slideshow img {
-    max-width: 100%;
-}
-
-#slideshow > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 </style>
 
 <body>
@@ -92,11 +73,11 @@
 
 
     <main>
-        <section class="kunstnere">
+        <section class="om-udstillinger">
 
-            <div class="kunstnere-content">
+            <div class="udstillinger-content">
                 <h1 class="title"></h1>
-                <p class="rubrik"></p>
+                <h3 class="rubrik"></h3>
                 <p class="brodtekst1"></p>
                 <p class="brodtekst2"></p>
             </div>
@@ -110,14 +91,18 @@
         <template>
 
             <section class="post-udstillinger">
-                <div>
+                <div class="column_text">
                     <h3 class="navn"></h3>
                     <div class="underline-udstillinger"></div>
                     <p class="beskrivelse"></p>
 
                 </div>
-                <div>
+                <div class="column-billede">
                         <img class="billede1">
+
+                        <img class="billede2">
+
+
 
 
     </div>
@@ -194,6 +179,11 @@
                 klon.querySelector("h3").innerHTML = post.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = post.brodtekst1;
                 klon.querySelector(".billede1").src = post.billede1.guid;
+                klon.querySelector(".billede2").src = post.billede2.guid;
+
+
+
+
 
 
 

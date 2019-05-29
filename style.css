@@ -10,7 +10,7 @@ body {
 
 
 h1 {
-    font-size: 1.4em;
+    font-size: 2em;
     color: #262120;
 }
 
@@ -241,6 +241,7 @@ header nav ul li a.active {
     width: 100%;
     height: auto;
     border-radius: 20px;
+    cursor: pointer;
 
 }
 
@@ -254,6 +255,7 @@ header nav ul li a.active {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    cursor: pointer;
 }
 
 .container:hover .overlay {
@@ -271,7 +273,7 @@ header nav ul li a.active {
     opacity: 0.4;
     transition: .5s ease;
     background-color: #262120;
-
+    cursor: pointer;
     border-radius: 20px;
 
 
@@ -279,6 +281,13 @@ header nav ul li a.active {
 }
 
 #tilbud p {
+    margin: 1rem 1rem 1rem 1rem;
+
+
+
+
+}
+#tilbud h3 {
     margin: 1rem 1rem 1rem 1rem;
 
 
@@ -443,11 +452,17 @@ header nav ul li a.active {
 .kunstnere-content h1 {
     text-align: center;
 }
-
-/*********USTILLINGER *************/
-.posts-udstillinger {
-
+.kunstnere h1{
+        text-align: center;
+        margin-top: 5rem;
     }
+/*********USTILLINGER *************/
+.udstillinger-content {
+    margin: 3rem;
+    }
+.udstillinger-content h1{
+    text-align: center;
+}
     .post-udstillinger {
         margin: 3rem;
     }
@@ -460,6 +475,19 @@ header nav ul li a.active {
     background-color: black;
 
 }
+/*************KONTAKT**************/
+    .kontakt {
+
+        justify-content: center;
+    }
+    .titlekontakt {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .kontakt-content {
+        margin: 3rem;
+        margin-top: 0;
+    }
 
 /********** iPAD MEDIA QUERY **********/
 
@@ -755,16 +783,25 @@ header nav ul li a.active {
 
     .kunstnere-content {
         margin: 5rem;
-
+        margin-top: 0rem;
         background-color: #FFFFFF;
 
         margin-bottom: 0rem;
 
 
     }
-
+    .kunstnere-content p {
+        max-width: 600px;
+    }
+    .kunstnerwrap {
+        display: flex;
+    }
     .kunstnere-content h1 {
         text-align: center;
+    }
+    .kunstnere h1{
+        text-align: center;
+        margin-top: 5rem;
     }
 
     .underline {
@@ -775,17 +812,60 @@ header nav ul li a.active {
 
     }
     /*************UDSTILLINGER***************/
+    .udstillinger-content {
+    margin: 5rem;
 
+    margin-top: 5rem;
+    background-color: #FFFFFF;
+
+
+}
+    .udstillinger-content p {
+        max-width: 600px;
+    }
+    .udstillinger-content h1{
+        text-align: center;
+    }
     .posts-udstillinger {
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .post-udstillinger {
         margin: 5rem;
     }
-    .post-udstillinger img {
-        max-width: 700px;
+
+
+    .post-udstillinger:nth-child(2) .column-billede {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: -0.5rem;
+    }
+    .post-udstillinger:nth-child(2) img {
+        width: 100%;
+    }
+    .post-udstillinger:nth-child(1) .column-billede {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: -0.5rem;
+    }
+    .column-billede img{
+        border: 10px solid white;
+    }
+    /*************KONTAKT**************/
+    .kontakt {
+        display: flex;
+        justify-content: center;
+    }
+    .titlekontakt {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .kontakt-content {
+        margin: 5rem;
+        margin-top: 0;
     }
 }
 

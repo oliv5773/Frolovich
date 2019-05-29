@@ -19,7 +19,9 @@ h1 {
 
 }
 
-
+.center {
+    text-align: center;
+}
 
 /**********NAVIGATION ***********/
 header {
@@ -443,7 +445,21 @@ header nav ul li a.active {
 }
 
 /*********USTILLINGER *************/
+.posts-udstillinger {
 
+    }
+    .post-udstillinger {
+        margin: 3rem;
+    }
+.posts-udstillinger img{
+    width: 100%;
+}
+.underline-udstillinger {
+    height: 1px;
+    width: 200px;
+    background-color: black;
+
+}
 
 /********** iPAD MEDIA QUERY **********/
 
@@ -719,14 +735,14 @@ header nav ul li a.active {
     .posts-om-os {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr margin: 5rem;
+        grid-template-rows: 1fr;
         margin-top: 0;
     }
 
     .post-om-os {
 
         padding: 1rem;
-        border: 0.5px solid lightgrey;
+
         margin: 1rem;
 
 
@@ -753,10 +769,23 @@ header nav ul li a.active {
 
     .underline {
         height: 2px;
-        width: 500px;
+        width: 200px;
         background-color: #262120;
         text-align: center;
 
+    }
+    /*************UDSTILLINGER***************/
+
+    .posts-udstillinger {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .post-udstillinger {
+        margin: 5rem;
+    }
+    .post-udstillinger img {
+        max-width: 700px;
     }
 }
 

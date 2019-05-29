@@ -18,6 +18,26 @@
         background-color: rgba(217, 164, 65, 0.9);
     }
 
+#slideshow {
+    display: inline-block;
+    margin-bottom: 10vh;;
+    position: relative;
+    width: 100%;
+    height: 9em;
+    padding: 0;
+}
+
+#slideshow img {
+    max-width: 100%;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 </style>
 
 <body>
@@ -83,26 +103,25 @@
 
 
         </section>
-        <main class="posts-om-os"></main>
+        <main class="posts-udstillinger"></main>
 
 
 
         <template>
 
-            <section class="post-om-os">
+            <section class="post-udstillinger">
                 <div>
                     <h3 class="navn"></h3>
+                    <div class="underline-udstillinger"></div>
                     <p class="beskrivelse"></p>
 
                 </div>
                 <div>
-                    <div class="w3-content w3-section" style="max-width:500px">
-                      <img class="mySlides billede1" style="width:100%">
-                      <img class="mySlides billede2" style="width:100%">
-                      <img class="mySlides billede3" style="width:100%">
-                       <img class="mySlides billede4" style="width:100%">
-                        </div>
-                </div>
+                        <img class="billede1">
+
+
+    </div>
+
 
 
             </section>
@@ -162,7 +181,7 @@
         function visIndhold() {
 
             //Destinationen for hvor vi vil have indholdet hen
-            let dest = document.querySelector(".posts-om-os");
+            let dest = document.querySelector(".posts-udstillinger");
             //Template i destinationen, som danner opbygningen af det aktuelle post, i html.
             let temp = document.querySelector("template");
 
@@ -175,9 +194,7 @@
                 klon.querySelector("h3").innerHTML = post.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = post.brodtekst1;
                 klon.querySelector(".billede1").src = post.billede1.guid;
-                klon.querySelector(".billede2").src = post.billede2.guid;
-                klon.querySelector(".billede3").src = post.billede3.guid;
-                klon.querySelector(".billede4").src = post.billede4.guid;
+
 
 
                 //Sender klonen retur til vores destination "posts" og processen gentages.

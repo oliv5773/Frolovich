@@ -2,16 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    /*    font-family: sans-serif;*/
-    /*background-color: #F2EBDC;*/
     font-family: 'Cormorant', serif;
     background-attachment: fixed;
     background-position: center;
 
-}
-
-a {
-    /* color: white; */
 }
 
 
@@ -86,7 +80,7 @@ header nav ul li.sub-menu:before {
     font-family: fontAwesome;
     position: absolute;
     line-height: 50px;
-    color: #000000;
+    color: #262120;
     right: 3px;
 }
 
@@ -97,7 +91,7 @@ header nav ul li.active.sub-menu:before {
 header nav ul li ul {
     position: absolute;
     left: 0;
-    background: #333;
+    background: #262120;
     display: none
 }
 
@@ -202,11 +196,11 @@ header nav ul li a.active {
 }
 
 #forsidesplash {
-        margin-top: 3.1rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
+    margin-top: 3.1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
 
-    }
+}
 
 
 
@@ -249,7 +243,7 @@ header nav ul li a.active {
 }
 
 .text {
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -295,7 +289,7 @@ header nav ul li a.active {
     display: none;
     border-radius: 20px;
     transition: 0.5s ease-in;
-    background-color: white;
+    background-color: #FFFFFF;
 
 
 
@@ -307,7 +301,7 @@ header nav ul li a.active {
     display: none;
     border-radius: 20px;
     transition: 0.5s ease-in;
-    background-color: white;
+    background-color: #FFFFFF;
 
 
 }
@@ -317,7 +311,7 @@ header nav ul li a.active {
     display: none;
     border-radius: 20px;
     transition: 0.5s ease-in;
-    background-color: white;
+    background-color: #FFFFFF;
 
 
 
@@ -390,10 +384,10 @@ header nav ul li a.active {
 
 #indhold {
     min-height: 61vh;
-    background-color: white;
+    background-color: #FFFFFF;
     width: 77vw;
     margin: 4rem auto;
-    border: 1px solid black;
+    border: 1px solid #262120;
     text-align: center;
 }
 
@@ -410,7 +404,7 @@ header nav ul li a.active {
 #luk button {
     width: 5vh;
     height: 5vh;
-    position:absolute;
+    position: absolute;
     top: 10vh;
     left: 55vh;
     background-color: transparent;
@@ -475,7 +469,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 1;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -490,7 +484,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 2;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -505,7 +499,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 3;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -580,7 +574,7 @@ header nav ul li a.active {
     }
 
     header nav ul li a {
-        color: #000000;
+        color: #262120;
     }
 
 
@@ -622,7 +616,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 1;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -637,7 +631,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 2;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -651,7 +645,7 @@ header nav ul li a.active {
         opacity: 0;
         grid-row: 2;
         grid-column: 3;
-        background-color: white;
+        background-color: #FFFFFF;
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
@@ -758,7 +752,7 @@ header nav ul li a.active {
     .underline {
         height: 2px;
         width: 500px;
-        background-color: black;
+        background-color: #262120;
         text-align: center;
 
     }
@@ -780,7 +774,7 @@ header nav ul li a.active {
         left: -100%;
         width: 100%;
         height: calc(100vh - 50px);
-        background: #333;
+        background: #262120;
         transition: 0.5s;
     }
 
@@ -799,8 +793,16 @@ header nav ul li a.active {
 
     header nav ul li.active ul {
         position: relative;
-        background: #003e6f;
+        background: #FFFFFF;
+    }
 
+    header nav ul li.active ul li a {
+        color: #262120;
+    }
+
+    header nav ul li.active ul li a:hover {
+        color: #262120;
+        background: #D9A441;
     }
 
     header nav ul li.sub-menu:before {

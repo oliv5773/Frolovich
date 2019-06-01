@@ -351,14 +351,21 @@ header nav ul li a.active {
 
     margin: 3rem;
     margin-top: 5rem;
+
 }
 
 .post {
 
     padding: 1rem;
-    border: 0.5px solid lightgrey;
+
     margin: 0.5rem;
     background-color: #FFFFFF;
+    box-shadow: 0px 0.5px 4px;
+
+}
+.post:hover {
+
+    box-shadow: 0px 1px 10px;
 }
 
 .post h2 {
@@ -589,7 +596,7 @@ header nav ul li a.active {
     .post {
 
         padding: 1rem;
-        border: 0.5px solid lightgrey;
+
         margin: 0.5rem;
         background-color: #FFFFFF;
     }
@@ -746,13 +753,14 @@ header nav ul li a.active {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 5rem;
+        margin: 8rem;
+        cursor: pointer;
     }
 
     .post {
 
         padding: 1rem;
-        border: 0.5px solid lightgrey;
+
         margin: 0.5rem;
         background-color: #FFFFFF;
     }
@@ -825,6 +833,7 @@ header nav ul li a.active {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin-top: 0;
+        margin: 8rem;
     }
 
     .post-om-os {
@@ -855,6 +864,8 @@ header nav ul li a.active {
     }
     .kunstnerwrap {
         display: flex;
+        margin: 8rem;
+        margin-top: 5rem;
     }
     .kunstnere-content h1 {
         text-align: center;
@@ -873,7 +884,7 @@ header nav ul li a.active {
     }
     /*************UDSTILLINGER***************/
     .udstillinger-content {
-    margin: 5rem;
+    margin: 8rem;
 
     margin-top: 5rem;
     background-color: #FFFFFF;
@@ -890,9 +901,10 @@ header nav ul li a.active {
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        margin: 5rem;
     }
     .post-udstillinger {
-        margin: 5rem;
+        margin: 3rem;
     }
 
 

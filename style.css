@@ -505,7 +505,10 @@ header nav ul li a.active {
     h1 {
         font-size: 3em;
     }
-
+    /* NAVIGATION*/
+    .menu-toggle {
+        margin-top: 0rem;
+    }
     /* TILBUD FORSIDE */
     #tilbudwrapper {
         display: grid;
@@ -631,9 +634,41 @@ header nav ul li a.active {
     header nav ul li a {
         color: #262120;
     }
+    header {
+        height: 80px;
+        justify-content: center;
 
 
+    }
+    .logo img{
+    width: 50%;
 
+}
+    .logo {
+        margin-top: 1rem;
+    }
+    nav {
+
+    }
+    header nav ul li a {
+
+    margin-top: 1rem;
+}
+    header nav ul li.sub-menu:before {
+    content: '\f078';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 100px;
+    color: #262120;
+    right: 3px;
+}
+    header nav ul li ul {
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    background: #262120;
+    display: none;
+}
     /*FORSIDE SPLASH*/
     #forsidesplash {
         margin-top: 5rem;
@@ -948,6 +983,7 @@ header nav ul li a.active {
 
     .menu-toggle {
         display: block;
+        margin-top: -3rem;
     }
 
     header nav {
@@ -956,9 +992,12 @@ header nav ul li a.active {
         top: 50px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 50px);
+        height: 100vh;
         background: #262120;
         transition: 0.5s;
+    }
+    header .navbar {
+        height: 80px;
     }
 
     header nav.active {
@@ -999,6 +1038,13 @@ header nav ul li a.active {
 
     header nav ul li ul li {
         width: 100%;
+    }
+    .logo img {
+        width: 50%;
+    }
+    .logo {
+        margin-top: 0.1rem;
+        padding: 0;
     }
 }
 

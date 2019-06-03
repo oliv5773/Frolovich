@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Cormorant', serif;
     background-attachment: fixed;
     background-position: center;
 }
@@ -10,6 +9,24 @@ body {
 h1 {
     font-size: 2em;
     color: #262120;
+    font-family: 'Cormorant', serif;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #262120;
+    font-family: 'Cormorant', serif;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #262120;
+    font-family: 'Cormorant', serif;
+}
+
+p {
+    line-height: 1.4em;
+    font-family: 'Lato', sans-serif;
 }
 
 .bold {
@@ -19,6 +36,22 @@ h1 {
 .center {
     text-align: center;
 }
+
+/*******MEDIA QUERIES (fonts)*******/
+@media (min-width: 520px) {
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
 
 
 /* Custom Scrollbar */
@@ -72,12 +105,6 @@ header .logo {
 .navigation {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #262120;
-    font-size: 0.6em;
 }
 
 header nav {
@@ -339,6 +366,7 @@ header nav ul li a.active {
     animation-fill-mode: forwards;
     opacity: 0;
     z-index: 10;
+    display: none;
 }
 
 .videotekst {
@@ -347,13 +375,12 @@ header nav ul li a.active {
     text-align: center;
     text-transform: uppercase;
     margin-top: 12vw;
-    font-size: 1em;
     line-height: 1em;
+    margin-bottom: 0.4em;
 }
 
 
 .call-to-action {
-    font-size: 0.5em;
     display: block;
     width: 8em;
     background-color: #D9A441;
@@ -383,7 +410,8 @@ header nav ul li a.active {
 
 .forside-overskrift {
     text-align: center;
-    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-top: 3em;
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -391,9 +419,6 @@ header nav ul li a.active {
 
 .forside-tekst1 {
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 0.8em;
 }
 
 .center-tekst {
@@ -401,9 +426,12 @@ header nav ul li a.active {
     display: inline-block;
 }
 
-#tilbudwrapper {
-    width: 90%;
-    margin: 0 5%;
+#tilbud {
+    margin: 0 7%;
+}
+
+#tilbud p {
+    text-align: justify;
 }
 
 #tilbudwrapper img {
@@ -412,16 +440,19 @@ header nav ul li a.active {
 
 #tilbudwrapper h3 {
     text-align: center;
-    padding-top: 0.5em;
-    font-size: 1.4em;
+    margin: 0.8em 0 0.4em 0;
+}
+
+#tilbudwrapper a {
+    display: block;
+    width: 60%;
+    margin: 0 20%;
 }
 
 .specialdesign,
 .omsmeltning,
 .katalog {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    font-size: 0.8em;
+    margin: 5em 0;
 }
 
 /* Pop */
@@ -481,7 +512,6 @@ header nav ul li a.active {
 
 .text {
     color: #F2EBDC;
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -511,14 +541,6 @@ header nav ul li a.active {
     background-color: #F2EBDC;
     cursor: pointer;
     border-radius: 5px;
-}
-
-#tilbud p {
-    margin: 1rem 1rem 1rem 1rem;
-}
-
-#tilbud h3 {
-    margin: 1rem 1rem 1rem 1rem;
 }
 
 .popup1 {
@@ -725,6 +747,76 @@ header nav ul li a.active {
     margin-top: 0;
 }
 
+
+
+/********** FOOTER **********/
+
+
+footer {
+    background-color: #D9BD9C;
+    color: #262120;
+    height: auto;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Dosis', sans-serif;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0;
+    padding-top: 2em;
+}
+
+.footer_left {
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+}
+
+.centerparent {
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.footer_centered {
+    display: inline-block;
+    text-align: left;
+    text-align: center;
+}
+
+.footer_right {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.footer_right a {
+    display: inline-block;
+    margin: 2em 0.5em;
+}
+
+.kontaktlink {
+    text-decoration: none;
+    color: #262120;
+}
+
+.kontaktlink:hover {
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+.some_facebook {
+    width: 1.7em;
+}
+
+.some_instagram {
+    width: 1.7em;
+}
+
+
 /********** iPAD MEDIA QUERY **********/
 
 @media (min-width: 768px) {
@@ -733,11 +825,11 @@ header nav ul li a.active {
         font-size: 3em;
     }
 
-    .videotekst {
-        font-size: 2.2em;
+    h3 {
+        font-size: 1.5em;
     }
 
-    .call-to-action {
+    p {
         font-size: 1em;
     }
 
@@ -747,24 +839,42 @@ header nav ul li a.active {
     }
 
     /* FORSIDE CONTENT */
-    .forside-overskrift {
-        font-size: 1.4em;
+
+    .splashwrap {
+        display: block;
     }
 
     .forside-tekst1 {
-        font-size: 1.3em;
         margin-bottom: 2em;
+    }
+
+
+    #tilbudwrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #tilbudswrapper a {
+        display: block;
     }
 
     .specialdesign,
     .omsmeltning,
     .katalog {
-        font-size: 1.3em;
+        width: 33%;
+        margin-top: 0.5em;
     }
 
-    #tilbudwrapper h3 {
-        font-size: 1.2em;
+    #tilbud {
+        margin: 0 5%;
     }
+
+    #tilbud p {
+        text-align: left;
+        padding: 0 1.4em;
+    }
+
+
 
     .popup1 {
         margin-bottom: 0;
@@ -824,15 +934,15 @@ header nav ul li a.active {
     }
 
     footer p {
-        font-size: 1.2em !important;
+        font-size: 1em;
     }
 
     .some_facebook {
-        width: 2.5em !important;
+        width: 2.5em;
     }
 
     .some_instagram {
-        width: 2.5em !important;
+        width: 2.5em;
     }
 }
 
@@ -847,13 +957,16 @@ header nav ul li a.active {
 /********** DESKTOP MEDIA QUERY **********/
 @media (min-width: 1024px) {
 
-    .videotekst {
-        font-size: 3em;
+    h2 {
+        font-size: 2.5em;
     }
 
+    h3 {
+        font-size: 1.8em;
+    }
 
-    .call-to-action {
-        font-size: 1.2em;
+    p {
+        font-size: 1.1em;
     }
 
     .navigation {
@@ -911,24 +1024,6 @@ header nav ul li a.active {
     }
 
     /*FORSIDE CONTENT*/
-    .forside-overskrift {
-        font-size: 2em;
-    }
-
-    .forside-tekst1 {
-        font-size: 1.5em;
-    }
-
-
-    .specialdesign,
-    .omsmeltning,
-    .katalog {
-        font-size: 1.5em;
-    }
-
-    #tilbudwrapper h3 {
-        font-size: 1em;
-    }
 
     .overlay {
         border-radius: 5px;
@@ -1070,6 +1165,22 @@ header nav ul li a.active {
     .kontakt-content {
         margin: 5rem;
     }
+
+    /*************FOOTER**************/
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    .some_facebook {
+        width: 2.8em;
+    }
+
+    .some_instagram {
+        width: 2.8em;
+    }
+
+
 }
 
 @media (max-width: 1024px) {
@@ -1136,97 +1247,5 @@ header nav ul li a.active {
     .logo {
         margin-top: 0.1rem;
         padding: 0;
-    }
-}
-
-
-
-
-/********** FOOTER **********/
-
-
-footer {
-    background-color: #D9BD9C;
-    color: #262120;
-    height: auto;
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family: 'Dosis', sans-serif;
-}
-
-footer p {
-    font-size: 0.8em;
-    margin: 0;
-    padding-top: 2em;
-}
-
-.footer_left {
-    text-align: center;
-    display: inline-block;
-    width: 49%;
-}
-
-.centerparent {
-    text-align: center;
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-}
-
-.footer_centered {
-    display: inline-block;
-    text-align: left;
-    text-align: center;
-}
-
-.footer_right {
-    display: block;
-    text-align: center;
-    width: 100%;
-}
-
-.footer_right a {
-    display: inline-block;
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-}
-
-.kontaktlink {
-    text-decoration: none;
-    color: #262120;
-}
-
-.kontaktlink:hover {
-    color: #FFFFFF;
-    transition: 0.3s ease;
-}
-
-.some_facebook {
-    width: 1.7em;
-}
-
-.some_instagram {
-    width: 1.7em;
-}
-
-
-
-
-/*******MEDIA QUERIES*******/
-@media (min-width: 520px) {
-
-    #tilbudwrapper {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .specialdesign,
-    .omsmeltning,
-    .katalog {
-        width: 28%;
-        margin: 0 1em;
     }
 }

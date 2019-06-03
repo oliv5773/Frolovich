@@ -14,7 +14,6 @@ h1 {
 
 .bold {
     font-family: 'Cormorant', bold;
-
 }
 
 .center {
@@ -31,17 +30,17 @@ h1 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
+    background: #F2EBDC;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #30415d;
+    background: #D9BD9C;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #D9A441;
 }
 
 
@@ -143,6 +142,10 @@ header nav ul li a:hover {
 
 header nav ul li a.active {
     background: #262120;
+}
+
+.navbar {
+    background-color: rgba(234, 223, 199, 0.74);
 }
 
 .menu-toggle {

@@ -28,7 +28,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 6em;
+    padding: 0 1em;
     width: 100%;
 
     box-sizing: border-box;
@@ -133,8 +133,8 @@ header nav ul li a.active {
 
 .menu-toggle {
     position: fixed;
-    right: 0.2em;
-    top: 0.2em;
+    right: 0.4em;
+    top: 0.4em;
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -174,7 +174,7 @@ header nav ul li a.active {
     display: none;
     position: fixed;
     height: 3em;
-    right: 6em;
+    right: 2em;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
     padding-top: 2em;
@@ -204,7 +204,7 @@ header nav ul li a.active {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    display: inline-block;
+    float: left;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -244,7 +244,7 @@ header nav ul li a.active {
 }
 
 .pcmenu_forside {
-    display: inline-block;
+    float: left;
 }
 
 .pcmenu_forside a:hover {
@@ -252,7 +252,7 @@ header nav ul li a.active {
 }
 
 .pcmenu_kontakt {
-    display: inline-block;
+    float: left;
 }
 
 .pcmenu_kontakt a:hover {
@@ -341,15 +341,18 @@ header nav ul li a.active {
     text-align: center;
     text-transform: uppercase;
     margin-top: 12vw;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 
 .call-to-action {
+    font-size: 0.5em;
     display: block;
-    width: 9.5em;
-    background-color: #FFFFFF;
+    width: 8em;
+    background-color: #D9A441;
     border: none;
-    color: #D9A441;
+    color: #FFFFFF;
     padding: 0.2em 0.7em 0.3em 0.7em;
     border-radius: 5em;
     cursor: pointer;
@@ -360,11 +363,12 @@ header nav ul li a.active {
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
+    margin-bottom: 0.4em;
 }
 
 .call-to-action:hover {
-    background-color: #D9A441;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #D9A441;
     transition: 0.3s ease;
 }
 
@@ -677,6 +681,14 @@ header nav ul li a.active {
         font-size: 3em;
     }
 
+    .videotekst {
+        font-size: 2.2em;
+    }
+
+    .call-to-action {
+        font-size: 1em;
+    }
+
     /* NAVIGATION*/
     .menu-toggle {
         margin-top: 0rem;
@@ -778,6 +790,19 @@ header nav ul li a.active {
     .post h2 {
         text-align: center;
     }
+
+
+    footer p {
+        font-size: 1.2em !important;
+    }
+
+    .some_facebook {
+        width: 2.5em !important;
+    }
+
+    .some_instagram {
+        width: 2.5em !important;
+    }
 }
 
 
@@ -790,6 +815,16 @@ header nav ul li a.active {
 
 /********** DESKTOP MEDIA QUERY **********/
 @media (min-width: 1024px) {
+
+    .videotekst {
+        font-size: 3em;
+    }
+
+
+    .call-to-action {
+        font-size: 1.2em;
+    }
+
     .navigation {
         display: none;
     }
@@ -1183,7 +1218,7 @@ header nav ul li a.active {
 
 @media (max-width: 1024px) {
     header {
-        padding: 0 20px;
+        padding: 0;
 
     }
 
@@ -1246,6 +1281,7 @@ header nav ul li a.active {
 
     .logo img {
         width: 40%;
+        vertical-align: middle;
     }
 
     .logo {
@@ -1265,10 +1301,15 @@ footer {
     color: #262120;
     height: auto;
     margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Dosis', sans-serif;
 }
 
 footer p {
-    font-size: 0.5em;
+    font-size: 0.8em;
+    margin: 0;
+    padding-top: 2em;
 }
 
 .footer_left {
@@ -1281,6 +1322,7 @@ footer p {
     text-align: center;
     display: inline-block;
     width: 49%;
+    vertical-align: top;
 }
 
 .footer_centered {
@@ -1295,6 +1337,14 @@ footer p {
     width: 100%;
 }
 
+.footer_right a {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
 .kontaktlink {
     text-decoration: none;
     color: #262120;
@@ -1307,7 +1357,6 @@ footer p {
 
 .some_facebook {
     width: 1.7em;
-    padding-top: 1.2em;
 }
 
 .some_instagram {

@@ -173,11 +173,6 @@ header nav ul li a.active {
 }
 
 
-
-
-
-
-
 /*PC-menu*/
 
 
@@ -385,15 +380,32 @@ header nav ul li a.active {
 
 
 /********** FORSIDE HVAD TILBYDER VI **********/
+
+.forside-overskrift {
+    text-align: center;
+    font-size: 0.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.forside-tekst1 {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+
+.center-tekst {
+    text-align: left;
+    display: inline-block;
+}
+
 #tilbudwrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#tilbud h1 {
-    text-align: center;
 }
 
 .container {
@@ -691,6 +703,14 @@ header nav ul li a.active {
     }
 
     /* TILBUD FORSIDE */
+    .forside-overskrift {
+        font-size: 1.4em;
+    }
+
+    .forside-tekst1 {
+        font-size: 1.3em;
+    }
+
     #tilbudwrapper {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -845,6 +865,15 @@ header nav ul li a.active {
     }
 
     /*FORSIDE HVAD TILBYDER VI*/
+    .forside-overskrift {
+        font-size: 2em;
+    }
+
+    .forside-tekst1 {
+        font-size: 1.5em;
+    }
+
+
     #tilbudwrapper {
         margin-left: 4rem;
         margin-right: 4rem;

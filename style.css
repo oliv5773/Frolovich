@@ -23,6 +23,30 @@ h1 {
     text-align: center;
 }
 
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #30415d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 /**********NAVIGATION ***********/
 header {
     position: fixed;
@@ -38,11 +62,9 @@ header {
 }
 
 header .logo {
-    color: #FFFFFF;
     height: 50px;
     line-height: 50px;
     float: left;
-    font-weight: bold;
 
 }
 
@@ -98,7 +120,7 @@ header nav ul li ul {
     position: absolute;
     left: 0;
     background: #262120;
-    display: none
+    display: none;
 }
 
 header nav ul li.active ul {
@@ -150,15 +172,9 @@ header nav ul li a.active {
     transition: all 0.3s ease;
 }
 
-.navbar {
-    background-color: transparent;
-    transition: 0.5s ease;
-}
-
 
 .solid {
     background-color: rgba(234, 223, 199, 0.74);
-    ;
 }
 
 
@@ -399,14 +415,19 @@ header nav ul li a.active {
 
 
 }
-.box1, .box2, .box3 {
+
+.box1,
+.box2,
+.box3 {
     background-color: black;
     height: 330px;
     border-radius: 5px;
 }
+
 .overlay h3 {
     color: black;
 }
+
 .image {
     display: block;
     width: 100%;
@@ -526,14 +547,19 @@ header nav ul li a.active {
 
 
 }
-.box1, .box2, .box3 {
+
+.box1,
+.box2,
+.box3 {
     background-color: black;
     height: 330px;
     border-radius: 5px;
 }
+
 .overlay h3 {
     color: black;
 }
+
 .image {
     display: block;
     width: 100%;
@@ -575,10 +601,6 @@ header nav ul li a.active {
     background-color: #F2EBDC;
     cursor: pointer;
     border-radius: 5px;
-
-
-
-
 }
 
 /**********SMYKKER GALLERI **********/
@@ -1038,6 +1060,7 @@ header nav ul li a.active {
 
 
     }
+
     /*SMYKKER MENU */
     #smykker1wrap {
 
@@ -1048,6 +1071,7 @@ header nav ul li a.active {
         margin-right: 10rem;
         margin-top: 5rem;
     }
+
     #smykker2wrap {
         display: grid;
         grid-template-rows: 1fr;
@@ -1058,6 +1082,7 @@ header nav ul li a.active {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
     /*SMYKKER GALLERI*/
 
     .posts {

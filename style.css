@@ -732,6 +732,14 @@ header nav ul li a.active {
 }
 
 /*************KONTAKT**************/
+.kontaktportræt img{
+    width: 100%;
+}
+.kontaktportræt {
+    margin: 5rem;
+    text-align: center;
+}
+
 .kontakt {
 
     justify-content: center;
@@ -1158,6 +1166,14 @@ footer p {
     }
 
     /*************KONTAKT**************/
+    .kontaktportræt img{
+    width: 70%;
+}
+.kontaktportræt {
+    margin: 5rem;
+    text-align: center;
+}
+
     .kontakt {
         display: flex;
     }

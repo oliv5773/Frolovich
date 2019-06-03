@@ -33,7 +33,7 @@ header {
 
     box-sizing: border-box;
 
-    z-index: 10;
+    z-index: 15;
 
 }
 
@@ -186,10 +186,12 @@ header nav ul li a.active {
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 1.75em;
+    transition: 0.3s ease;
 }
 
 .pc_menu a:hover {
     color: white;
+    transition: 0.3s ease;
 }
 
 /* Dropdown Button */
@@ -282,7 +284,27 @@ header nav ul li a.active {
 }
 
 
+@keyframes tekstscale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
 
+    10% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 
 
@@ -303,14 +325,48 @@ header nav ul li a.active {
 
 }
 
-.videotekst {
+.splashwrap {
     position: absolute;
+    width: 100%;
+    animation: tekstscale 0.5s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 10;
+}
+
+.videotekst {
     color: white;
     text-shadow: 2px 2px 2px black;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 12vw;
 }
 
 
+.call-to-action {
+    display: block;
+    width: 9.5em;
+    background-color: #FFFFFF;
+    border: none;
+    color: #D9A441;
+    padding: 0.2em 0.7em 0.3em 0.7em;
+    border-radius: 5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.call-to-action:hover {
+    background-color: #D9A441;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
 
 
 /********** FORSIDE HVAD TILBYDER VI **********/
@@ -678,8 +734,6 @@ header nav ul li a.active {
         margin: 1rem;
         line-height: 1.5rem;
         border-radius: 20px;
-
-
     }
 
     #tilbud p {
@@ -1209,7 +1263,7 @@ header nav ul li a.active {
 footer {
     background-color: #D9A441;
     color: #262120;
-    height: 4em;
+    height: auto;
     margin-top: 1em;
 }
 
@@ -1218,26 +1272,27 @@ footer p {
 }
 
 .footer_left {
-    text-align: left;
-    float: left;
-    padding-left: 1em;
+    text-align: center;
+    display: inline-block;
+    width: 49%;
 }
 
-.footer_right {
-    float: right;
-    text-align: right;
-    padding-right: 1em;
+.centerparent {
+    text-align: center;
+    display: inline-block;
+    width: 49%;
 }
 
 .footer_centered {
     display: inline-block;
-    padding-top: 0.015em;
     text-align: left;
+    text-align: center;
 }
 
-
-.centerparent {
+.footer_right {
+    display: block;
     text-align: center;
+    width: 100%;
 }
 
 .kontaktlink {
@@ -1247,7 +1302,7 @@ footer p {
 
 .kontaktlink:hover {
     color: #FFFFFF;
-    transition: 0.5s;
+    transition: 0.3s ease;
 }
 
 .some_facebook {

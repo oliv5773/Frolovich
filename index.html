@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velkommen til Frolov & Savova Smykkekunst!</title>
-    <link rel="stylesheet" href="style.css?ver=21">
+    <link rel="stylesheet" href="style.css?ver=32">
     <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -96,7 +96,10 @@
 
     <main>
         <section id="forsidesplash">
-            <h1 class="videotekst">Unikt smykkedesign<br>i hjertet af København</h1>
+            <div class="splashwrap">
+                <h1 class="videotekst">Unikt smykkedesign<br>i &#10084; af København</h1>
+                <a class="call-to-action" href="smykker.html">Bestil smykker ➔</a>
+            </div>
             <div id="splashvideo">
                 <video src="video/splashvideo_frolov.mp4" autoplay loop width="100%"></video>
             </div>
@@ -163,10 +166,6 @@
             <p><strong>Frolov & Savova Smykkekunst</strong><br>Nørre Farimagsgade 70<br>1364 København K<br><a class="kontaktlink" href="tel:+4528111741">+45 28111741</a>
                 <br><a class="kontaktlink" href="mailto: ptossip@gmail.com">ptossip@gmail.com</a></p>
         </div>
-        <div class="footer_right">
-            <a href="https://www.facebook.com/frolov.savova/" target="_blank"><img class="some_facebook" src="img/facebook-icon.png"></a>
-            <a href="https://www.instagram.com/frolov_savova_jewelry/" target="_blank"><img class="some_instagram" src="img/instagram-icon.png"></a>
-        </div>
 
         <div class="centerparent">
             <div class="footer_centered">
@@ -177,7 +176,13 @@
                     <br>Søndag-Mandag: Efter aftale</p>
             </div>
         </div>
+
+        <div class="footer_right">
+            <a href="https://www.facebook.com/frolov.savova/" target="_blank"><img class="some_facebook" src="img/facebook-icon.png"></a>
+            <a href="https://www.instagram.com/frolov_savova_jewelry/" target="_blank"><img class="some_instagram" src="img/instagram-icon.png"></a>
+        </div>
     </footer>
+
     <script>
         document.querySelector(".container1").addEventListener("click", popUps);
         document.querySelector(".container2").addEventListener("click", popUps2);

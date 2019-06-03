@@ -157,7 +157,7 @@ header nav ul li a.active {
 
 
 .solid {
-    background-color: rgba(217, 164, 65, 0.9);
+    background-color: rgba(234, 223, 199, 0.74);
     ;
 }
 
@@ -404,7 +404,7 @@ header nav ul li a.active {
     display: block;
     width: 100%;
     height: auto;
-
+    background-color: black;
     cursor: pointer;
 
 }
@@ -1297,7 +1297,8 @@ header nav ul li a.active {
 
 
 footer {
-    background-color: #D9A441;
+    /*background-color: #D9A441; */
+    background-color: #D9BD9C;
     color: #262120;
     height: auto;
     margin-top: 1em;

@@ -695,7 +695,7 @@ header nav ul li a.active {
     position: fixed;
     overflow: scroll;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: rgb(255, 255, 255);
 
 
 
@@ -721,8 +721,9 @@ header nav ul li a.active {
     background-color: #FFFFFF;
     width: 77vw;
     margin: 4rem auto;
-    border: 1px solid #262120;
+    box-shadow: 0px 0px 10px;
     text-align: center;
+    border-radius: 20px;
 }
 
 .singleret img {
@@ -730,17 +731,23 @@ header nav ul li a.active {
 }
 
 #luk button {
-    width: 5vh;
+    width: 10vh;
     height: 5vh;
     position: absolute;
-    top: 10vh;
-    left: 44vh;
-    background-color: transparent;
+    top: 11vh;
+    left: 38vh;
+    background-color: #D9A441;
     border: 0px;
-    font-size: 30px;
+    font-size: 1em;
     z-index: 10;
+    cursor: pointer;
+    border-radius: 20px;
 }
-
+#luk button:hover {
+    background-color: white;
+    color: #D9A441;
+    border: 1px solid black;
+}
 /************ OM OS *******************/
 .posts-om-os {
     margin: 3rem;
@@ -804,7 +811,7 @@ header nav ul li a.active {
     text-align: center;
     margin: 3rem;
     margin-top: 5rem;
-    font-size: 2em;
+
 }
 .inspiration-tekst {
 
@@ -820,7 +827,7 @@ header nav ul li a.active {
 
 }
     #fortaellinger h2 {
-        margin: 5rem;
+        margin: 3rem;
 
         margin-bottom: 0;
     }
@@ -1229,23 +1236,75 @@ footer p {
     }
 
 
+
+
+
+
+
+
     /************ SINGLE VIEW*************/
+#popup {
+    top: 5rem;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
 
 
+
+}
+
+
+
+
+
+
+.skjul {
+    display: none;
+}
+
+#indhold {
+    min-height: 51vh;
+    background-color: #FFFFFF;
+    width: 77vw;
+    margin: 4rem auto;
+
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
     #indhold img {
-        max-width: 70%;
+        width: 30%;
     }
+.singleret img {
+    width: 50%;
+}
 
-    #indhold {
-        min-height: 70vh;
-        width: 100vh;
+#luk button {
+    width: 10vh;
+    height: 5vh;
+    position: absolute;
+    top: 10vh;
+    left: 155vh;
+    color: white;
+    border: 0px;
+    background-color: #D9A441;
+    border-radius: 20px;
+    font-size: 1em;
+    z-index: 10;
+    cursor: pointer;
+}
+    #luk button:hover {
+        background-color: white;
+        color: #D9A441;
+        border: 1px solid black;
     }
-
-    #luk button {
-        left: 138vh;
-    }
-
     /***********OM OS*************/
+    .kunstnere h1 {
+        margin-top: 8rem;
+    }
     .posts-om-os {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1290,7 +1349,9 @@ footer p {
 
 
     }
-
+    .udstillinger-overskrift {
+        margin-top: 8rem;
+    }
 
 
     .posts-udstillinger {
@@ -1323,6 +1384,9 @@ footer p {
         border: 10px solid white;
     }
     /*************INSPIRATION**************/
+    .inspiration-overskrift {
+        margin-top: 8rem;
+    }
     #fortaellingwrap {
     display: flex;
     margin-left: 5rem;

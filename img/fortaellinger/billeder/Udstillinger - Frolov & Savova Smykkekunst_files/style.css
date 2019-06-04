@@ -619,7 +619,7 @@ header nav ul li a.active {
 .kasse img {
   width: 100%;
   height: auto;
-
+   
 }
 
 /* Style the button and place it in the middle of the container/image */
@@ -807,26 +807,9 @@ header nav ul li a.active {
     font-size: 2em;
 }
 .inspiration-tekst {
-
+    
     text-align: center;
-    margin: 3rem;
 }
-
-#fortaellingwrap img{
-    width: 100%;
-}
-  #fortaellingwrap {
-
-
-}
-    #fortaellinger h2 {
-        margin: 5rem;
-
-        margin-bottom: 0;
-    }
-    .fcolumns {
-        margin: 3rem;
-    }
 /*************KONTAKT**************/
 .kontaktportræt img {
     width: 100%;
@@ -1032,7 +1015,7 @@ footer p {
     /*********** SMYKKER MENU************/
      #smykker1wrap {
         justify-items: center;
-
+        
         margin-top: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1181,10 +1164,10 @@ footer p {
         margin-left: 4rem;
         margin-right: 4rem;
     }
-
-
-
-
+    
+  
+    
+    
     .kasse {
   position: relative;
   width: 100%;
@@ -1195,7 +1178,7 @@ footer p {
 .kasse img {
   width: 100%;
   height: auto;
-
+   
 }
 
 /* Style the button and place it in the middle of the container/image */
@@ -1271,7 +1254,7 @@ footer p {
 
     .kunstnerwrap {
         display: flex;
-        margin: 0rem;
+        margin: 8rem;
         margin-top: 5rem;
     }
 
@@ -1291,7 +1274,7 @@ footer p {
 
     }
 
-
+    
 
     .posts-udstillinger {
         display: grid;
@@ -1323,25 +1306,7 @@ footer p {
         border: 10px solid white;
     }
     /*************INSPIRATION**************/
-    #fortaellingwrap {
-    display: flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-    #fortaellinger h2 {
-        margin: 5rem;
-        margin-left: 8rem;
-        margin-bottom: 0;
-    }
-    .fcolumns {
-        margin: 3rem;
-    }
-    .fortaelling-left-column img{
-        width: 70%;
-    }
-    #small {
-        width: 50%;
-    }
+    
     /*************KONTAKT**************/
     .kontaktportræt img {
         width: 70%;

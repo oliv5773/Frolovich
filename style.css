@@ -854,10 +854,9 @@ header nav ul li a.active {
     margin-top: 5rem;
 }
 
-.kontakt-content {
-    margin: 3rem;
-    margin-top: 0;
-}
+.kontakt-left {
+        margin-left: 3rem;
+    }
 
 
 
@@ -1077,6 +1076,15 @@ footer p {
 
     .some_instagram {
         width: 2.5em;
+    }
+    /*KONTAKT*/
+    .kontakt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    iframe {
+        margin-top: 5rem;
     }
 }
 
@@ -1410,18 +1418,25 @@ footer p {
     .kontaktportræt img {
         width: 70%;
     }
-
+    .titlekontakt {
+        margin-top: 8rem;
+    }
     .kontaktportræt {
         margin: 5rem;
         text-align: center;
     }
 
     .kontakt {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .kontakt-left {
+        margin-left: 8rem;
     }
 
-    .kontakt-content {
-        margin: 5rem;
+    iframe {
+        margin-top: 8rem;
     }
 
     /*************FOOTER**************/

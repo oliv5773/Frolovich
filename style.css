@@ -1318,7 +1318,7 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin-top: 0;
-        margin: 8rem;
+
     }
 
     .post-om-os {
@@ -1351,7 +1351,7 @@ footer p {
 
     /*************UDSTILLINGER***************/
     .udstillinger-content {
-        margin: 8rem;
+        margin: 5rem;
         margin-top: 5rem;
         background-color: #FFFFFF;
 
@@ -1366,7 +1366,7 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        margin: 5rem;
+        margin: 2rem;
     }
 
 
@@ -1397,12 +1397,12 @@ footer p {
     }
     #fortaellingwrap {
     display: flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
     #fortaellinger h2 {
         margin: 5rem;
-        margin-left: 8rem;
+
         margin-bottom: 0;
     }
     .fcolumns {

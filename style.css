@@ -575,6 +575,31 @@ header nav ul li a.active {
 
 
 /***********SMYKKER MENU************/
+
+
+.smykker-overskrift {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.smykker-tekst {
+    text-align: center;
+}
+
+#smykker1 p,
+#smykker2 p,
+#smykker3 p,
+#smykker4 p,
+#smykker5 p,
+#smykker6 p,
+    {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
 .containersmykker {
     position: relative;
     width: 75%;
@@ -732,9 +757,10 @@ header nav ul li a.active {
 }
 
 /*************KONTAKT**************/
-.kontaktportræt img{
+.kontaktportræt img {
     width: 100%;
 }
+
 .kontaktportræt {
     margin: 5rem;
     text-align: center;
@@ -761,8 +787,8 @@ header nav ul li a.active {
 
 
 footer {
-    background-color: #D9BD9C;
-    color: #262120;
+    background-color: #262120;
+    color: #F2EBDC;
     height: auto;
     margin-top: 1em;
     padding-left: 1em;
@@ -1166,13 +1192,14 @@ footer p {
     }
 
     /*************KONTAKT**************/
-    .kontaktportræt img{
-    width: 70%;
-}
-.kontaktportræt {
-    margin: 5rem;
-    text-align: center;
-}
+    .kontaktportræt img {
+        width: 70%;
+    }
+
+    .kontaktportræt {
+        margin: 5rem;
+        text-align: center;
+    }
 
     .kontakt {
         display: flex;

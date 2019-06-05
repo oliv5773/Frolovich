@@ -1260,7 +1260,7 @@ footer p {
     #smykker2wrap {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1f 1fr 1frr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         margin-left: 4rem;
         margin-right: 4rem;

@@ -20,7 +20,7 @@
         </div>
         <div id="indhold"></div>
     </div>
-    <section id="all">
+
 
         <header class="navbar">
             <div class="logo">
@@ -101,7 +101,7 @@
         </header>
 
         <main>
-
+<section id="all">
             <section id="smykker3">
 
                 <div class="smykker-overskrift">
@@ -133,6 +133,7 @@
 
                 </section>
             </template>
+            </section>
         </main>
 
 
@@ -159,7 +160,7 @@
                 <a href="https://www.instagram.com/frolov_savova_jewelry/" target="_blank"><img class="some_instagram hvr-grow" src="img/instagram-icon.svg"></a>
             </div>
         </footer>
-    </section>
+
 
     <script>
         let indhold;
@@ -223,6 +224,9 @@
                     document.querySelector("#popup #luk").addEventListener("click", close);
                     document.querySelector("body").style.overflow = "hidden";
                     document.querySelector("#all").classList.add("blur");
+                    document.querySelector("header").classList.add("blur");
+                    document.querySelector("footer").classList.add("blur");
+
 
                 }
 
@@ -230,6 +234,8 @@
                     document.querySelector("#popup").style.display = "none";
                     document.querySelector("body").style.overflow = "scroll";
                     document.querySelector("#all").classList.remove("blur");
+                    document.querySelector("header").classList.remove("blur");
+                    document.querySelector("footer").classList.remove("blur");
                 }
 
             })

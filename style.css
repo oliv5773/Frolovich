@@ -594,6 +594,7 @@ header nav ul li a.active {
     margin-top: 8em;
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: -1.6em;
 }
 
 .smykker-tekst {
@@ -605,7 +606,7 @@ header nav ul li a.active {
 #smykker4,
 #smykker5,
 #smykker6 {
-    margin: 0 7%;
+    margin: 0;
 }
 
 #smykker1 p,
@@ -1299,7 +1300,8 @@ footer p {
 
     .posts {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 8rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
         cursor: pointer;
     }
 

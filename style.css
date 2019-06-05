@@ -868,11 +868,11 @@ header nav ul li a.active {
 }
 
 /*************KONTAKT**************/
-.kontaktportræt img {
+.kontaktportraet img {
     width: 100%;
 }
 
-.kontaktportræt {
+.kontaktportraet {
     margin: 5rem;
     text-align: center;
 }
@@ -892,6 +892,14 @@ header nav ul li a.active {
     margin-left: 3rem;
 }
 
+.kontakthref {
+    text-decoration: none;
+    color: #262120;
+}
+
+.kontakthref:hover {
+    color: #D9A441;
+}
 
 
 /********** FOOTER **********/
@@ -1486,7 +1494,7 @@ footer p {
     }
 
     /*************KONTAKT**************/
-    .kontaktportræt img {
+    .kontaktportraet img {
         width: 70%;
     }
 
@@ -1494,7 +1502,7 @@ footer p {
         margin-top: 8rem;
     }
 
-    .kontaktportræt {
+    .kontaktportraet {
         margin: 5rem;
         text-align: center;
     }

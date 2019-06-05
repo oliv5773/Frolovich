@@ -100,6 +100,7 @@
     </header>
 
     <main>
+       <section id="all">
         <section id="smykker4">
             <div class="smykker-overskrift">
                 <h1>Vedhæng til halskæder</h1>
@@ -130,6 +131,7 @@
 
             </section>
         </template>
+        </section>
     </main>
 
 
@@ -218,11 +220,17 @@
                     document.querySelector("#popup").style.display = "block";
                     document.querySelector("#popup #luk").addEventListener("click", close);
                     document.querySelector("body").style.overflow = "hidden";
+                    document.querySelector("#all").classList.add("blur");
+                    document.querySelector("header").classList.add("blur");
+                    document.querySelector("footer").classList.add("blur");
                 }
 
                 function close() {
                     document.querySelector("#popup").style.display = "none";
                     document.querySelector("body").style.overflow = "scroll";
+                     document.querySelector("#all").classList.remove("blur");
+                    document.querySelector("header").classList.remove("blur");
+                    document.querySelector("footer").classList.remove("blur");
                 }
 
             })

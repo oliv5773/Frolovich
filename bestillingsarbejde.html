@@ -20,7 +20,7 @@
         </div>
         <div id="indhold"></div>
     </div>
-    <section id="all">
+
         <header class="navbar">
             <div class="logo">
                 <a class="logo_mobile" href="index.html"><img src="img/logo_mobile.png"></a>
@@ -100,6 +100,7 @@
         </header>
 
         <main>
+           <section id="all">
             <section id="smykker2">
                 <div class="smykker-overskrift">
                     <h1>Bestillingsarbejde</h1>
@@ -144,7 +145,9 @@
                         <p class="pris"></p>
                     </div>
                 </section>
+
             </template>
+            </section>
         </main>
 
 
@@ -231,11 +234,17 @@
                         document.querySelector("#popup").style.display = "block";
                         document.querySelector("#popup #luk").addEventListener("click", close);
                         document.querySelector("body").style.overflow = "hidden";
+                        document.querySelector("#all").classList.add("blur");
+                        document.querySelector("header").classList.add("blur");
+                        document.querySelector("footer").classList.add("blur");
                     }
 
                     function close() {
                         document.querySelector("#popup").style.display = "none";
                         document.querySelector("body").style.overflow = "scroll";
+                        document.querySelector("#all").classList.remove("blur");
+                        document.querySelector("header").classList.remove("blur");
+                        document.querySelector("footer").classList.remove("blur");
                     }
 
                 })

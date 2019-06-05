@@ -340,7 +340,9 @@ header nav ul li a.active {
 }
 
 
-
+.blur {
+    filter:blur(8px);
+}
 
 
 /********** FORSIDE SPLASH **********/
@@ -695,7 +697,7 @@ header nav ul li a.active {
     position: fixed;
     overflow: scroll;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+
 
 
 
@@ -1258,7 +1260,7 @@ footer p {
     position: fixed;
     overflow: scroll;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+
 
 
 

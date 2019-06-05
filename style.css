@@ -689,7 +689,7 @@ header nav ul li a.active {
 }
 
 .posts {
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .post {
@@ -735,6 +735,7 @@ header nav ul li a.active {
     padding: 1rem;
 
 
+
 }
 
 .skjul {
@@ -742,10 +743,12 @@ header nav ul li a.active {
 }
 
 #indhold {
+
     min-height: 61vh;
     background-color: #FFFFFF;
     width: 77vw;
     margin: 4rem auto;
+    margin-top: 8rem;
     box-shadow: 0px 0px 10px;
     text-align: center;
     border-radius: 20px;
@@ -759,7 +762,7 @@ header nav ul li a.active {
     width: 10vh;
     height: 5vh;
     position: absolute;
-    top: 11vh;
+    top: 20vh;
     left: 38vh;
     background-color: #D9A441;
     border: 0px;
@@ -881,7 +884,9 @@ header nav ul li a.active {
 
     justify-content: center;
 }
-
+#desktop {
+    display: none;
+}
 .titlekontakt {
     text-transform: uppercase;
     text-align: center;
@@ -900,6 +905,16 @@ header nav ul li a.active {
 .kontakthref:hover {
     color: #D9A441;
 }
+   #desktop {
+    display: none;
+}
+    #mobile {
+        display: block;
+        margin-left: 0.8rem;
+    }
+    #tablet {
+        display: none;
+    }
 
 
 /********** FOOTER **********/
@@ -1134,8 +1149,9 @@ footer p {
         margin-top: 2.7em;
     }
 
-    iframe {
-        margin-top: 5rem;
+    #tablet {
+        margin-right: 2rem;
+        margin-top: 2rem;
     }
 
 
@@ -1154,6 +1170,15 @@ footer p {
     /*********** UDSTILLINGER ************/
     .udstillinger-overskrift {
         margin-top: 2.7em;
+    }
+      #desktop {
+    display: none;
+}
+    #mobile {
+        display: none;
+    }
+    #tablet {
+        display: block;
     }
 }
 
@@ -1217,6 +1242,7 @@ footer p {
 
     header nav ul li.sub-menu:before {
         line-height: 100px;
+
     }
 
     header nav ul li ul {
@@ -1518,7 +1544,16 @@ footer p {
     }
 
     iframe {
-        margin-top: 8rem;
+        margin-top: 2rem;
+    }
+    #desktop {
+    display: block;
+}
+    #mobile {
+        display: none;
+    }
+    #tablet {
+        display: none;
     }
 
     /*************FOOTER**************/
@@ -1588,6 +1623,7 @@ footer p {
         line-height: 50px;
         color: #FFFFFF;
         right: 10px;
+        padding: 16px;
     }
 
     header nav ul li ul li {

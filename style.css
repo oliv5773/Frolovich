@@ -10,18 +10,21 @@ h1 {
     font-size: 2em;
     color: #262120;
     font-family: 'Cormorant', serif;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 1.8em;
     color: #262120;
     font-family: 'Cormorant', serif;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.6em;
     color: #262120;
     font-family: 'Cormorant', serif;
+    text-transform: uppercase;
 }
 
 p {
@@ -595,10 +598,18 @@ header nav ul li a.active {
     margin-top: 8em;
     margin-left: 1em;
     margin-right: 1em;
-    margin-bottom: -1.6em;
+}
+
+.smykker-overskrift h1 {
+    margin-bottom: 0.5em;
 }
 
 .smykker-tekst {
+    text-align: center;
+}
+
+.topmargin {
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -1272,6 +1283,10 @@ footer p {
     #smykker5,
     #smykker6 {
         margin: 0%;
+    }
+
+    .smykker-tekst {
+        margin: 0 10%;
     }
 
     .kasse {

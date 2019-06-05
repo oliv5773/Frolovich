@@ -37,6 +37,10 @@ p {
     text-align: center;
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 /*******MEDIA QUERIES (fonts)*******/
 @media (min-width: 520px) {
     h2 {
@@ -89,7 +93,7 @@ header {
 }
 
 header .logo {
-    height: 50px;
+    height: 5.5em;
     line-height: 50px;
     float: left;
 }
@@ -102,9 +106,14 @@ header .logo {
     max-width: 400px;
 }
 
+.logo_pc {
+    display: none;
+}
+
 .navigation {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
+    top: 5.5em;
 }
 
 header nav {
@@ -178,7 +187,7 @@ header nav ul li a.active {
 .menu-toggle {
     position: fixed;
     right: 0.4em;
-    top: 0.4em;
+    top: 1.25em;
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -341,7 +350,7 @@ header nav ul li a.active {
 
 
 .blur {
-    filter:blur(8px);
+    filter: blur(8px);
 }
 
 
@@ -354,9 +363,9 @@ header nav ul li a.active {
 }
 
 #forsidesplash {
-    margin-top: 3.1rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-top: 5.5em;
+    margin-left: 0;
+    margin-right: 0;
 
 }
 
@@ -591,6 +600,14 @@ header nav ul li a.active {
     text-align: center;
 }
 
+#smykker2,
+#smykker3,
+#smykker4,
+#smykker5,
+#smykker6 {
+    margin: 0 7%;
+}
+
 #smykker1 p,
 #smykker2 p,
 #smykker3 p,
@@ -601,50 +618,59 @@ header nav ul li a.active {
     text-align: left;
     padding: 0 1.4em;
 }
+
+#smykker2 {
+    margin: 0 7%;
+}
+
 #smykker1wrap {
     margin: 3rem;
 }
+
 #smykker2wrap {
     margin: 3rem;
 }
+
 #smykker1 {
     margin: 3rem;
 }
+
 /* Container needed to position the button. Adjust the width as needed */
 .kasse {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 
 }
 
 /* Make the image responsive */
 .kasse img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 
 }
 
 /* Style the button and place it in the middle of the container/image */
 .kasse .btn {
-  position: absolute;
-  top: 93%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #D9A441;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #D9A441;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .kasse .btn:hover {
-  background-color: white;
+    background-color: white;
     color: #D9A441;
     border: 1px solid black;
 }
+
 .containersmykker {
     position: relative;
     width: 75%;
@@ -666,7 +692,6 @@ header nav ul li a.active {
 
 .posts {
     margin: 3rem;
-    margin-top: 5rem;
 }
 
 .post {
@@ -745,11 +770,13 @@ header nav ul li a.active {
     cursor: pointer;
     border-radius: 20px;
 }
+
 #luk button:hover {
     background-color: white;
     color: #D9A441;
     border: 1px solid black;
 }
+
 /************ OM OS *******************/
 .posts-om-os {
     margin: 3rem;
@@ -781,7 +808,7 @@ header nav ul li a.active {
 
 .kunstnere h1 {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 4em;
 }
 
 /*********UDSTILLINGER *************/
@@ -791,6 +818,10 @@ header nav ul li a.active {
 
 .udstillinger-content h1 {
     text-align: center;
+}
+
+.udstillinger-overskrift {
+    margin-top: 4em;
 }
 
 .post-udstillinger {
@@ -812,30 +843,32 @@ header nav ul li a.active {
 .inspiration-overskrift {
     text-align: center;
     margin: 3rem;
-    margin-top: 5rem;
+    margin-top: 4em;
 
 }
+
 .inspiration-tekst {
 
     text-align: center;
     margin: 3rem;
 }
 
-#fortaellingwrap img{
+#fortaellingwrap img {
     width: 100%;
 }
-  #fortaellingwrap {
 
+#fortaellingwrap {}
 
+#fortaellinger h2 {
+    margin: 3rem;
+
+    margin-bottom: 0;
 }
-    #fortaellinger h2 {
-        margin: 3rem;
 
-        margin-bottom: 0;
-    }
-    .fcolumns {
-        margin: 3rem;
-    }
+.fcolumns {
+    margin: 3rem;
+}
+
 /*************KONTAKT**************/
 .kontaktportræt img {
     width: 100%;
@@ -852,13 +885,14 @@ header nav ul li a.active {
 }
 
 .titlekontakt {
+    text-transform: uppercase;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 4em;
 }
 
 .kontakt-left {
-        margin-left: 3rem;
-    }
+    margin-left: 3rem;
+}
 
 
 
@@ -913,7 +947,7 @@ footer p {
 
 .kontaktlink {
     text-decoration: none;
-    color: #262120;
+    color: #F2EBDC;
 }
 
 .kontaktlink:hover {
@@ -1037,8 +1071,9 @@ footer p {
         grid-row: 1;
         grid-column: 3;
     }
+
     /*********** SMYKKER MENU************/
-     #smykker1wrap {
+    #smykker1wrap {
         justify-items: center;
 
         margin-top: 5rem;
@@ -1046,20 +1081,22 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
     .kasse .btn {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #D9A441;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-}
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #D9A441;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
     /*Smykker Galleri*/
     .posts {
         display: grid;
@@ -1079,22 +1116,40 @@ footer p {
     .some_instagram {
         width: 2.5em;
     }
-    /*KONTAKT*/
+
+    /*********** KONTAKT ************/
     .kontakt {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    .titlekontakt {
+        margin-top: 2.7em;
+    }
+
     iframe {
         margin-top: 5rem;
     }
+
+
+    /*********** OM OS ************/
+    .kunstnere h1 {
+        margin-top: 2.7em;
+    }
+
+
+    /*********** INSPIRATION ************/
+    .inspiration-overskrift {
+        margin-top: 2.7em;
+    }
+
+
+    /*********** UDSTILLINGER ************/
+    .udstillinger-overskrift {
+        margin-top: 2.7em;
+    }
 }
-
-
-
-
-
-
 
 
 
@@ -1142,7 +1197,13 @@ footer p {
         margin-top: 0.5rem;
     }
 
+    .logo_mobile {
+        display: none;
+    }
 
+    .logo_pc {
+        display: block;
+    }
 
     header nav ul li a {
         margin-top: 1rem;
@@ -1199,43 +1260,40 @@ footer p {
         margin-right: 4rem;
     }
 
-
-
-
     .kasse {
-  position: relative;
-  width: 100%;
+        position: relative;
+        width: 100%;
 
-}
+    }
 
-/* Make the image responsive */
-.kasse img {
-  width: 100%;
-  height: auto;
+    /* Make the image responsive */
+    .kasse img {
+        width: 100%;
+        height: auto;
 
-}
+    }
 
-/* Style the button and place it in the middle of the container/image */
-.kasse .btn {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #D9A441;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-}
+    /* Style the button and place it in the middle of the container/image */
+    .kasse .btn {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #D9A441;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+    }
 
-.kasse .btn:hover {
-  background-color: white;
-    color: #D9A441;
-    border: 1px solid black;
-}
+    .kasse .btn:hover {
+        background-color: white;
+        color: #D9A441;
+        border: 1px solid black;
+    }
 
     /*SMYKKER GALLERI*/
 
@@ -1253,68 +1311,64 @@ footer p {
 
 
     /************ SINGLE VIEW*************/
-#popup {
-    top: 5rem;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    overflow: scroll;
-    z-index: 10;
+    #popup {
+        top: 5rem;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        overflow: scroll;
+        z-index: 10;
+    }
 
+    .skjul {
+        display: none;
+    }
 
+    #indhold {
+        min-height: 51vh;
+        background-color: #FFFFFF;
+        width: 77vw;
+        margin: 4rem auto;
 
+        box-shadow: 0px 0px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
 
-}
-
-
-
-
-
-
-.skjul {
-    display: none;
-}
-
-#indhold {
-    min-height: 51vh;
-    background-color: #FFFFFF;
-    width: 77vw;
-    margin: 4rem auto;
-
-    box-shadow: 0px 0px 10px;
-    border-radius: 10px;
-    text-align: center;
-}
     #indhold img {
         width: 30%;
     }
-.singleret img {
-    width: 50%;
-}
 
-#luk button {
-    width: 10vh;
-    height: 5vh;
-    position: absolute;
-    top: 10vh;
-    left: 155vh;
-    color: white;
-    border: 0px;
-    background-color: #D9A441;
-    border-radius: 20px;
-    font-size: 1em;
-    z-index: 10;
-    cursor: pointer;
-}
+    .singleret img {
+        width: 50%;
+    }
+
+    #luk button {
+        width: 10vh;
+        height: 5vh;
+        position: absolute;
+        top: 10vh;
+        left: 155vh;
+        color: white;
+        border: 0px;
+        background-color: #D9A441;
+        border-radius: 20px;
+        font-size: 1em;
+        z-index: 10;
+        cursor: pointer;
+    }
+
     #luk button:hover {
         background-color: white;
         color: #D9A441;
         border: 1px solid black;
     }
+
     /***********OM OS*************/
     .kunstnere h1 {
         margin-top: 8rem;
     }
+
     .posts-om-os {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1359,6 +1413,7 @@ footer p {
 
 
     }
+
     .udstillinger-overskrift {
         margin-top: 8rem;
     }
@@ -1393,36 +1448,45 @@ footer p {
     .column-billede img {
         border: 10px solid white;
     }
+
     /*************INSPIRATION**************/
     .inspiration-overskrift {
         margin-top: 8rem;
     }
+
     #fortaellingwrap {
-    display: flex;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+        display: flex;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     #fortaellinger h2 {
         margin: 5rem;
 
         margin-bottom: 0;
     }
+
     .fcolumns {
         margin: 3rem;
     }
-    .fortaelling-left-column img{
+
+    .fortaelling-left-column img {
         width: 70%;
     }
+
     #small {
         width: 50%;
     }
+
     /*************KONTAKT**************/
     .kontaktportræt img {
         width: 70%;
     }
+
     .titlekontakt {
         margin-top: 8rem;
     }
+
     .kontaktportræt {
         margin: 5rem;
         text-align: center;
@@ -1433,6 +1497,7 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
     .kontakt-left {
         margin-left: 8rem;
     }
@@ -1514,7 +1579,7 @@ footer p {
         width: 100%;
     }
 
-    .logo img {
+    /*.logo img {
         width: 40%;
         vertical-align: middle;
     }
@@ -1522,5 +1587,5 @@ footer p {
     .logo {
         margin-top: 0.1rem;
         padding: 0;
-    }
+    }*/
 }

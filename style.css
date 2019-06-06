@@ -1645,6 +1645,8 @@ footer p {
         line-height: 50px;
         color: #FFFFFF;
         right: 10px;
+        padding: 10px;
+
     }
 
     header nav ul li ul li {

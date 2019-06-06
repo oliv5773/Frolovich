@@ -706,10 +706,6 @@ header nav ul li a.active {
     width: 100%;
 }
 
-.posts {
-    margin: 0 7%;
-}
-
 .post {
     padding: 1rem;
     margin: 2em;
@@ -1115,7 +1111,6 @@ footer p {
     /*********** SMYKKER MENU************/
     #smykker1wrap {
         justify-items: center;
-
         margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1134,8 +1129,6 @@ footer p {
     .posts {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0 3%;
     }
 
     .post {

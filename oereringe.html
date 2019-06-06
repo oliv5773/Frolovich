@@ -100,37 +100,37 @@
     </header>
 
     <main>
-       <section id="all">
-        <section id="smykker5">
-            <div class="smykker-overskrift">
-                <h1>Øreringe</h1>
-            </div>
-
-            <div class="smykker-tekst">
-                <div class="center-tekst">
-                    <p>Vi laver øreringe til enhver smag, og bruger mange forskellige materialer og sten.<br> Dette er blot et udvalg af hvad vi kan tilbyde i vores forretning <br>Ønsker du at købe eller se et af disse smykker? Så send os en mail eller kom forbi i vores butik.</p>
-                </div>
-            </div>
-
-
-            <div class="posts"></div>
-        </section>
-
-
-        <template>
-
-            <section class="post">
-                <h2></h2>
-                <div>
-                    <img class="billede">
-                </div>
-                <div>
-                    <p class="kort"></p>
-                    <p class="pris"></p>
+        <section id="all">
+            <section id="smykker5">
+                <div class="smykker-overskrift">
+                    <h1>Øreringe</h1>
                 </div>
 
+                <div class="smykker-tekst">
+                    <div class="center-tekst">
+                        <p>Vi laver øreringe til enhver smag, og bruger mange forskellige materialer og sten.<br> Dette er blot et udvalg af hvad vi kan tilbyde i vores forretning <br>Ønsker du at købe eller se et af disse smykker? Så send os en mail eller kom forbi i vores butik.</p>
+                    </div>
+                </div>
+
+
+                <div class="posts"></div>
             </section>
-        </template>
+
+
+            <template>
+
+                <section class="post">
+                    <h3></h3>
+                    <div>
+                        <img class="billede">
+                    </div>
+                    <div>
+                        <p class="kort"></p>
+                        <p class="pris"></p>
+                    </div>
+
+                </section>
+            </template>
         </section>
     </main>
 
@@ -194,7 +194,7 @@
                 //cloneNode skaber en kopi af "template".
                 let klon = temp.cloneNode(true).content;
                 console.log(post.billede);
-                klon.querySelector("h2").innerHTML = post.title.rendered;
+                klon.querySelector("h3").innerHTML = post.title.rendered;
                 klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector(".pris").innerHTML = post.pris;
                 klon.querySelector(".kort").innerHTML = post.beskrivelse;
@@ -208,7 +208,7 @@
                 function visSingle(post) {
                     document.querySelector("#indhold").innerHTML = `
                             <article class="singleret">
-                                <h2>${post.title.rendered}</h2>
+                                <h3>${post.title.rendered}</h3>
                                 <img src="${post.billede.guid}">
                                 <p>Beskrivelse: ${post.beskrivelse}</p>
 
@@ -219,7 +219,7 @@
                     document.querySelector("#popup").style.display = "block";
                     document.querySelector("#popup #luk").addEventListener("click", close);
                     document.querySelector("body").style.overflow = "hidden";
-                     document.querySelector("#all").classList.add("blur");
+                    document.querySelector("#all").classList.add("blur");
                     document.querySelector("header").classList.add("blur");
                     document.querySelector("footer").classList.add("blur");
                 }
@@ -227,7 +227,7 @@
                 function close() {
                     document.querySelector("#popup").style.display = "none";
                     document.querySelector("body").style.overflow = "scroll";
-                     document.querySelector("#all").classList.remove("blur");
+                    document.querySelector("#all").classList.remove("blur");
                     document.querySelector("header").classList.remove("blur");
                     document.querySelector("footer").classList.remove("blur");
                 }

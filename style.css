@@ -45,6 +45,9 @@ p {
 }
 
 /*******MEDIA QUERIES (fonts)*******/
+
+
+
 @media (min-width: 520px) {
     h2 {
         font-size: 2.2em;
@@ -56,6 +59,10 @@ p {
 
     p {
         font-size: 1.1em;
+    }
+
+    .kasse {
+        margin-bottom: 5em;
     }
 }
 
@@ -595,7 +602,7 @@ header nav ul li a.active {
 .smykker-overskrift {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 8em;
+    margin-top: 9em;
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -611,6 +618,10 @@ header nav ul li a.active {
 .topmargin {
     margin-top: 2em;
     text-align: center;
+}
+
+#smykker1 {
+    margin: 0 5%;
 }
 
 #smykker2,
@@ -640,28 +651,24 @@ header nav ul li a.active {
     margin: 3rem;
 }
 
-#smykker1 {
-    margin: 3rem;
-}
-
 /* Container needed to position the button. Adjust the width as needed */
 .kasse {
     position: relative;
     width: 100%;
+    margin-bottom: 4em;
 
 }
 
 /* Make the image responsive */
 .kasse img {
-    width: 100%;
+    width: 90%;
+    padding: 0 5%;
     height: auto;
-
 }
 
 /* Style the button and place it in the middle of the container/image */
 .kasse .btn {
-    position: absolute;
-    top: 93%;
+    position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -700,28 +707,27 @@ header nav ul li a.active {
 }
 
 .posts {
-    margin: 2rem;
+    margin: 0 7%;
 }
 
 .post {
-
     padding: 1rem;
-
-    margin: 0.5rem;
+    margin: 2em;
     background-color: #FFFFFF;
     box-shadow: 0px 0.5px 4px;
-
 }
 
 .post:hover {
-
     box-shadow: 0px 1px 10px;
 }
 
-.post h2 {
+.post h3 {
     text-align: center;
 }
 
+.pris {
+    text-align: right;
+}
 
 /************ SINGLE VIEW*************/
 #popup {
@@ -731,10 +737,6 @@ header nav ul li a.active {
     position: fixed;
     overflow: scroll;
     z-index: 10;
-
-
-
-
 }
 
 
@@ -770,17 +772,18 @@ header nav ul li a.active {
 }
 
 #luk button {
-    width: 10vh;
-    height: 5vh;
-    position: absolute;
-    top: 20vh;
-    left: 38vh;
+    color: white;
+    width: 4em;
+    height: 2em;
+    position: fixed;
+    top: 5.8em;
+    left: 72%;
     background-color: #D9A441;
     border: 0px;
     font-size: 1em;
     z-index: 10;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 #luk button:hover {
@@ -895,9 +898,11 @@ header nav ul li a.active {
 
     justify-content: center;
 }
+
 #desktop {
     display: none;
 }
+
 .titlekontakt {
     text-transform: uppercase;
     text-align: center;
@@ -916,16 +921,19 @@ header nav ul li a.active {
 .kontakthref:hover {
     color: #D9A441;
 }
-   #desktop {
+
+#desktop {
     display: none;
 }
-    #mobile {
-        display: block;
-        margin-left: 0.8rem;
-    }
-    #tablet {
-        display: none;
-    }
+
+#mobile {
+    display: block;
+    margin-left: 0.8rem;
+}
+
+#tablet {
+    display: none;
+}
 
 
 /********** FOOTER **********/
@@ -1108,25 +1116,18 @@ footer p {
     #smykker1wrap {
         justify-items: center;
 
-        margin-top: 5rem;
+        margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .kasse .btn {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #D9A441;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
+    #smykker2,
+    #smykker3,
+    #smykker4,
+    #smykker5,
+    #smykker6 {
+        margin: 0 5%;
     }
 
     /*Smykker Galleri*/
@@ -1134,7 +1135,11 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 2.5rem;
+        margin: 0 3%;
+    }
+
+    .post {
+        margin: 1em;
     }
 
     footer p {
@@ -1182,12 +1187,15 @@ footer p {
     .udstillinger-overskrift {
         margin-top: 2.7em;
     }
-      #desktop {
-    display: none;
-}
+
+    #desktop {
+        display: none;
+    }
+
     #mobile {
         display: none;
     }
+
     #tablet {
         display: block;
     }
@@ -1286,8 +1294,6 @@ footer p {
     /*SMYKKER MENU */
     #smykker1wrap {
         justify-items: center;
-        margin-left: 10rem;
-        margin-right: 10rem;
         margin-top: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1308,62 +1314,15 @@ footer p {
     #smykker4,
     #smykker5,
     #smykker6 {
-        margin: 0%;
-    }
-
-    .smykker-tekst {
-        margin: 0 10%;
-    }
-
-    .kasse {
-        position: relative;
-        width: 100%;
-
-    }
-
-    /* Make the image responsive */
-    .kasse img {
-        width: 100%;
-        height: auto;
-
-    }
-
-    /* Style the button and place it in the middle of the container/image */
-    .kasse .btn {
-        position: absolute;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #D9A441;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-    }
-
-    .kasse .btn:hover {
-        background-color: white;
-        color: #D9A441;
-        border: 1px solid black;
+        margin: 0 5%;
     }
 
     /*SMYKKER GALLERI*/
 
     .posts {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 8rem;
-        margin-right: 8rem;
+        grid-template-columns: 25% 25% 25% 25%;
         cursor: pointer;
     }
-
-
-
-
-
-
 
 
     /************ SINGLE VIEW*************/
@@ -1397,21 +1356,6 @@ footer p {
 
     .singleret img {
         width: 50%;
-    }
-
-    #luk button {
-        width: 10vh;
-        height: 5vh;
-        position: absolute;
-        top: 10vh;
-        left: 155vh;
-        color: white;
-        border: 0px;
-        background-color: #D9A441;
-        border-radius: 20px;
-        font-size: 1em;
-        z-index: 10;
-        cursor: pointer;
     }
 
     #luk button:hover {
@@ -1561,12 +1505,15 @@ footer p {
     iframe {
         margin-top: 2rem;
     }
+
     #desktop {
-    display: block;
-}
+        display: block;
+    }
+
     #mobile {
         display: none;
     }
+
     #tablet {
         display: none;
     }
@@ -1638,7 +1585,6 @@ footer p {
         line-height: 50px;
         color: #FFFFFF;
         right: 10px;
-        padding: 16px;
     }
 
     header nav ul li ul li {

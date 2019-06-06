@@ -124,7 +124,7 @@
             <template>
 
                 <section class="post">
-                    <h2></h2>
+                    <h3></h3>
                     <div>
                         <img class="billede">
                     </div>
@@ -199,7 +199,7 @@
                 //cloneNode skaber en kopi af "template".
                 let klon = temp.cloneNode(true).content;
                 console.log(post.billede);
-                klon.querySelector("h2").innerHTML = post.title.rendered;
+                klon.querySelector("h3").innerHTML = post.title.rendered;
                 klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector(".pris").innerHTML = post.pris;
                 klon.querySelector(".kort").innerHTML = post.beskrivelse;
@@ -213,7 +213,7 @@
                 function visSingle(post) {
                     document.querySelector("#indhold").innerHTML = `
                             <article class="singleret">
-                                <h2>${post.title.rendered}</h2>
+                                <h3>${post.title.rendered}</h3>
                                 <img src="${post.billede.guid}">
                                 <p> ${post.lang_beskrivelse}</p>
                                 <p> ${post.pris}</p>

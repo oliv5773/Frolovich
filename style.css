@@ -397,7 +397,7 @@ header nav ul li a.active {
 
 .videotekst {
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px #262120;
     text-align: center;
     text-transform: uppercase;
     margin-top: 12vw;
@@ -520,13 +520,13 @@ header nav ul li a.active {
 .box1,
 .box2,
 .box3 {
-    background-color: black;
+    background-color: #262120;
     height: 330px;
     border-radius: 5px;
 }
 
 .overlay h3 {
-    color: black;
+    color: #262120;
 }
 
 .image {
@@ -636,13 +636,32 @@ header nav ul li a.active {
     margin: 0 7%;
 }
 
-#smykker1 p,
-#smykker2 p,
-#smykker3 p,
-#smykker4 p,
-#smykker5 p,
-#smykker6 p,
-    {
+#smykker1 p {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+#smykker2 p {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+#smykker3 p {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+#smykker4 p {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+#smykker5 p {
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+#smykker6 p {
     text-align: left;
     padding: 0 1.4em;
 }
@@ -671,9 +690,10 @@ header nav ul li a.active {
 }
 
 /* Style the button and place it in the middle of the container/image */
-.kasse .btn {
+
+.kasse a {
     position: relative;
-    left: 50%;
+    left: 39%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #D9A441;
@@ -683,23 +703,16 @@ header nav ul li a.active {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-}
-
-.kasse .btn a {
-    color: white;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
 }
 
-.kasse .btn a:hover {
-    color: #D9A441;
-}
-
-.kasse .btn:hover {
+.kasse a:hover {
     color: #D9A441;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #D9A441;
+    transition: 0.5s ease;
 }
 
 .containersmykker {
@@ -800,7 +813,7 @@ header nav ul li a.active {
 #luk button:hover {
     background-color: white;
     color: #D9A441;
-    border: 1px solid black;
+    border: 1px solid #262120;
 }
 
 /************ OM OS *******************/
@@ -922,6 +935,10 @@ header nav ul li a.active {
 
 .kontakt-right {
     margin-bottom: 4em;
+}
+
+.kontakt-right iframe {
+    width: 100%;
 }
 
 .lokation {
@@ -1436,7 +1453,7 @@ footer p {
     #luk button:hover {
         background-color: white;
         color: #D9A441;
-        border: 1px solid black;
+        border: 1px solid #262120;
     }
 
     /***********OM OS*************/

@@ -826,11 +826,15 @@ header nav ul li a.active {
 
 /*********UDSTILLINGER *************/
 .udstillinger-content {
-    margin: 3rem;
+    margin: 0 7%;
 }
 
 .udstillinger-content h1 {
     text-align: center;
+}
+
+.udstillinger-content h3 {
+    margin-top: 2em;
 }
 
 .udstillinger-overskrift {
@@ -838,7 +842,9 @@ header nav ul li a.active {
 }
 
 .post-udstillinger {
-    margin: 3rem;
+    margin: 0 7%;
+    margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 .posts-udstillinger img {
@@ -863,23 +869,25 @@ header nav ul li a.active {
 .inspiration-tekst {
 
     text-align: center;
-    margin: 3rem;
+    margin: 0 7%;
+}
+
+#fortaellingwrap {
+    margin-bottom: 4em;
 }
 
 #fortaellingwrap img {
     width: 100%;
 }
 
-#fortaellingwrap {}
-
 #fortaellinger h2 {
-    margin: 3rem;
-
-    margin-bottom: 0;
+    margin: 0 7%;
+    margin-top: 2em;
+    text-align: center;
 }
 
 .fcolumns {
-    margin: 3rem;
+    margin: 0 7%;
 }
 
 /*************KONTAKT**************/
@@ -889,6 +897,7 @@ header nav ul li a.active {
 
 .kontaktportraet {
     margin: 0 7%;
+    margin-bottom: 4em;
     text-align: center;
 }
 
@@ -907,7 +916,7 @@ header nav ul li a.active {
 
 .lokation h2 {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 0;
 }
 
 .underrubrik {
@@ -968,6 +977,7 @@ footer {
     color: #F2EBDC;
     height: auto;
     margin-top: 1em;
+    padding-top: 1.8em;
     padding-left: 1em;
     padding-right: 1em;
     font-family: 'Dosis', sans-serif;
@@ -1176,11 +1186,20 @@ footer p {
     }
 
     /*********** KONTAKT ************/
-    .kontakt {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+
+    .kontakt-left {
+        display: flex;
+        margin-top: 2em;
     }
+
+    .aabning {
+        width: 50%;
+    }
+
+    .lokation {
+        width: 50%;
+    }
+
 
     .titlekontakt {
         margin-top: 2.7em;
@@ -1189,6 +1208,10 @@ footer p {
     #tablet {
         margin-right: 2rem;
         margin-top: 2rem;
+    }
+
+    .aabning h2 {
+        margin-top: 0;
     }
 
 
@@ -1207,6 +1230,14 @@ footer p {
         margin-top: 2.7em;
     }
 
+    .inspiration-tekst {
+        margin: 0 5%;
+    }
+
+    .fcolumns {
+        margin: 0 5%;
+    }
+
 
     /*********** UDSTILLINGER ************/
     .udstillinger-overskrift {
@@ -1223,6 +1254,11 @@ footer p {
 
     #tablet {
         display: block;
+        margin-top: 0;
+    }
+
+    .post-udstillinger {
+        margin-bottom: 4em;
     }
 }
 
@@ -1439,13 +1475,16 @@ footer p {
 
     /*************UDSTILLINGER***************/
     .udstillinger-content {
-        margin: 5rem;
+        margin-bottom: 0;
         margin-top: 5rem;
-        background-color: #FFFFFF;
     }
 
     .udstillinger-overskrift {
         margin-top: 8rem;
+    }
+
+    .underline-udstillinger {
+        width: 100%;
     }
 
 
@@ -1522,22 +1561,13 @@ footer p {
         text-align: center;
     }
 
-    .kontakt {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .kontakt-left {
-        margin-left: 8rem;
-    }
-
     iframe {
         margin-top: 2rem;
     }
 
     #desktop {
         display: block;
+        margin-top: 0;
     }
 
     #mobile {

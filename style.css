@@ -371,7 +371,10 @@ header nav ul li a.active {
 
 #splashvideo img {
     width: 100%;
+}
 
+#splashvideo video {
+    width: 100%;
 }
 
 #forsidesplash {
@@ -682,9 +685,20 @@ header nav ul li a.active {
     border-radius: 20px;
 }
 
-.kasse .btn:hover {
-    background-color: white;
+.kasse .btn a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.kasse .btn a:hover {
     color: #D9A441;
+}
+
+.kasse .btn:hover {
+    color: #D9A441;
+    background-color: white;
     border: 1px solid black;
 }
 

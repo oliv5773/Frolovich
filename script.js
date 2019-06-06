@@ -1,5 +1,5 @@
 /*Navigationsmenu - undermenuer */
-
+/* Navigationsmenu kilde: https://jsfiddle.net/maheshoz/wuj7a10o/4/ */
 $(document).ready(
     function () {
         $('.menu-toggle').click(function () {

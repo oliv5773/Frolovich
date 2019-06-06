@@ -172,54 +172,7 @@
     </footer>
 
     <script>
-        let indhold;
-        document.addEventListener("DOMContentLoaded", hentJson);
-        //Henter JSON fil i asynkron function.
 
-        async function hentJson() {
-            console.log("Henter json");
-            // Fortæller os om async functionen bliver loaded
-            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/ringe";
-            //Er en konstabel der retter mod den "page" eller "post" på back-enden (wordpress) som vi gerne vil arbejde med
-
-            // Henter data filen
-            const myJson = await fetch(url);
-            // den hentede data skal tolkes som json
-            indhold = await myJson.json();
-            //Kalder funktion der viser data i DOM
-
-            visIndhold();
-
-            //Leder async functionen videre til "visIndhold" functionen, hvor indholdet bliver hentet ind.
-        }
-
-        function visIndhold() {
-
-            //Destinationen for hvor vi vil have indholdet hen
-            let dest = document.querySelector(".posts");
-            //Template i destinationen, som danner opbygningen af det aktuelle post, i html.
-            let temp = document.querySelector("template");
-
-
-            //En "For each" funktion, som gør at hvert nyt post bliver sat i hver sin template, altså bliver indholdet loopet. og overskriver dermed ikke hinanden
-            indhold.forEach(post => {
-                //cloneNode skaber en kopi af "template".
-                let klon = temp.cloneNode(true).content;
-                console.log(post.billede);
-                klon.querySelector("h2").innerHTML = post.title.rendered;
-                klon.querySelector("img").src = post.billede.guid;
-                klon.querySelector(".pris").innerHTML = post.pris;
-                klon.querySelector(".kort").innerHTML = post.beskrivelse;
-                //Sender klonen retur til vores destination "posts" og processen gentages.
-                dest.appendChild(klon);
-
-
-
-            })
-
-
-
-        }
 
     </script>
 

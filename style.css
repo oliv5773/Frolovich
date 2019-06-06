@@ -38,6 +38,7 @@ p {
 
 .center {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .title {
@@ -790,8 +791,8 @@ header nav ul li a.active {
 
 /************ OM OS *******************/
 .posts-om-os {
-    margin: 3rem;
-    margin-top: 4rem;
+    margin: 0 7%;
+    margin-bottom: 5em;
 }
 
 .post-om-os {
@@ -807,14 +808,15 @@ header nav ul li a.active {
 
 
 .kunstnere-content {
-    margin: 3rem;
-    margin-top: 5rem;
-    background-color: #FFFFFF;
-
+    margin: 0 7%;
 }
 
 .kunstnere-content h1 {
     text-align: center;
+}
+
+.kunstnere {
+    margin-bottom: 5em;
 }
 
 .kunstnere h1 {
@@ -886,13 +888,42 @@ header nav ul li a.active {
 }
 
 .kontaktportraet {
-    margin: 5rem;
+    margin: 0 7%;
     text-align: center;
 }
 
 .kontakt {
-
+    margin: 0 7%;
     justify-content: center;
+}
+
+.kontakt-right {
+    margin-bottom: 4em;
+}
+
+.lokation {
+    margin-bottom: 4em;
+}
+
+.lokation h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.underrubrik {
+    text-align: center;
+}
+
+.aabning {
+    margin-bottom: 4em;
+}
+
+.aabning h2 {
+    text-align: center;
+}
+
+.aabning p {
+    text-align: center;
 }
 
 #desktop {
@@ -905,9 +936,6 @@ header nav ul li a.active {
     margin-top: 4em;
 }
 
-.kontakt-left {
-    margin-left: 3rem;
-}
 
 .kontakthref {
     text-decoration: none;
@@ -924,7 +952,7 @@ header nav ul li a.active {
 
 #mobile {
     display: block;
-    margin-left: 0.8rem;
+    margin-bottom: 2em;
 }
 
 #tablet {
@@ -1169,6 +1197,10 @@ footer p {
         margin-top: 2.7em;
     }
 
+    .kunstnere-content {
+        margin: 0 5%;
+    }
+
 
     /*********** INSPIRATION ************/
     .inspiration-overskrift {
@@ -1366,19 +1398,12 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        margin-top: 0;
-
+        margin: 0 4%;
     }
 
     .post-om-os {
         padding: 1rem;
         margin: 1rem;
-    }
-
-    .kunstnere-content {
-        margin: 5rem;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
     }
 
     .kunstnere-content p {
@@ -1387,8 +1412,6 @@ footer p {
 
     .kunstnerwrap {
         display: flex;
-        margin: 0rem;
-        margin-top: 5rem;
     }
 
     .underline {
@@ -1398,13 +1421,27 @@ footer p {
         text-align: center;
     }
 
+    .underrubrik {
+        margin-top: 0.5em;
+    }
+
+    .navn {
+        text-align: center;
+    }
+
+    .rubrik {
+        text-align: center;
+    }
+
+    .underline {
+        margin: 0 auto;
+    }
+
     /*************UDSTILLINGER***************/
     .udstillinger-content {
         margin: 5rem;
         margin-top: 5rem;
         background-color: #FFFFFF;
-
-
     }
 
     .udstillinger-overskrift {
